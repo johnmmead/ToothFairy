@@ -10,9 +10,17 @@
 
 @implementation TFAppDelegate
 
+@synthesize model;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // we need to make the model available to the view controllers
+    model = [[TFModel alloc]init];
+    
+    // set some model defaults
+    model.age = [NSNumber numberWithInt: 40];
+    model.income = [NSNumber numberWithInt: 50];
+    
     return YES;
 }
 							
