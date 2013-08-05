@@ -27,6 +27,57 @@
 		88170CFE17AC1ED30059FE25 /* TFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170CFD17AC1ED30059FE25 /* TFConstants.m */; };
 		88170D0017AC33CD0059FE25 /* cellCheckmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170CFF17AC33CD0059FE25 /* cellCheckmark.png */; };
 		88170D0917AC4D2A0059FE25 /* TFEducationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D0817AC4D2A0059FE25 /* TFEducationTableViewController.m */; };
+		88170D0C17AC51650059FE25 /* TFEducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D0B17AC51650059FE25 /* TFEducationViewController.m */; };
+		88170D0F17AC69510059FE25 /* TFAgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D0E17AC69500059FE25 /* TFAgeViewController.m */; };
+		88170D1217AC69660059FE25 /* TFIncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D1117AC69650059FE25 /* TFIncomeViewController.m */; };
+		88170D1417AC7B4B0059FE25 /* startBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D1317AC7B4B0059FE25 /* startBackground.png */; };
+		88170D1717AC7FCE0059FE25 /* TFStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D1617AC7FCD0059FE25 /* TFStartViewController.m */; };
+		88170D1917AC9AB90059FE25 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88170D1817AC9AB90059FE25 /* QuartzCore.framework */; };
+		88170D1F17AC9C820059FE25 /* TRSDialScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D1C17AC9C820059FE25 /* TRSDialScrollView.m */; };
+		88170D2017AC9C820059FE25 /* TRSDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D1E17AC9C820059FE25 /* TRSDialView.m */; };
+		88170D2317AC9DEF0059FE25 /* DialShading.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2117AC9DEF0059FE25 /* DialShading.png */; };
+		88170D2417AC9DEF0059FE25 /* DialBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2217AC9DEF0059FE25 /* DialBackground.png */; };
+		88170D2617AF76060059FE25 /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2517AF76050059FE25 /* downArrow@2x.png */; };
+		88170D2917AFFA760059FE25 /* startButtonNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2717AFFA750059FE25 /* startButtonNormal@2x.png */; };
+		88170D2A17AFFA760059FE25 /* startButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2817AFFA760059FE25 /* startButtonPressed@2x.png */; };
+		88170D2D17B004580059FE25 /* startButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2B17B004570059FE25 /* startButtonNormal.png */; };
+		88170D2E17B004580059FE25 /* startButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2C17B004580059FE25 /* startButtonPressed.png */; };
+		885B8AE617B00899009284D2 /* HelveticaRoundedLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */; };
+		885B8AE717B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */; };
+		885B8AE817B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */; };
+		885B8AE917B00899009284D2 /* HoeflTexBla in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC917B00899009284D2 /* HoeflTexBla */; };
+		885B8AEA17B00899009284D2 /* HoeflTexBlaAlt in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ACA17B00899009284D2 /* HoeflTexBlaAlt */; };
+		885B8AEB17B00899009284D2 /* HoeflTexBlaIta in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ACB17B00899009284D2 /* HoeflTexBlaIta */; };
+		885B8AEC17B00899009284D2 /* HoeflTexBlaItaAlt in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ACC17B00899009284D2 /* HoeflTexBlaItaAlt */; };
+		885B8AED17B00899009284D2 /* HoeflTexBlaItaSC in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ACD17B00899009284D2 /* HoeflTexBlaItaSC */; };
+		885B8AEE17B00899009284D2 /* HoeflTexBlaItaSwa in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ACE17B00899009284D2 /* HoeflTexBlaItaSwa */; };
+		885B8AEF17B00899009284D2 /* HoeflTexBlaItaSwSC in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ACF17B00899009284D2 /* HoeflTexBlaItaSwSC */; };
+		885B8AF017B00899009284D2 /* HoeflTexBlaSmaCap in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD017B00899009284D2 /* HoeflTexBlaSmaCap */; };
+		885B8AF117B00899009284D2 /* HoeflTexBol in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD117B00899009284D2 /* HoeflTexBol */; };
+		885B8AF217B00899009284D2 /* HoeflTexBolAlt in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD217B00899009284D2 /* HoeflTexBolAlt */; };
+		885B8AF317B00899009284D2 /* HoeflTexBolIta in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD317B00899009284D2 /* HoeflTexBolIta */; };
+		885B8AF417B00899009284D2 /* HoeflTexBolItaAlt in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD417B00899009284D2 /* HoeflTexBolItaAlt */; };
+		885B8AF517B00899009284D2 /* HoeflTexBolItaSC in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD517B00899009284D2 /* HoeflTexBolItaSC */; };
+		885B8AF617B00899009284D2 /* HoeflTexBolItaSwa in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD617B00899009284D2 /* HoeflTexBolItaSwa */; };
+		885B8AF717B00899009284D2 /* HoeflTexBolItaSwSC in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD717B00899009284D2 /* HoeflTexBolItaSwSC */; };
+		885B8AF817B00899009284D2 /* HoeflTexBolSmaCap in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD817B00899009284D2 /* HoeflTexBolSmaCap */; };
+		885B8AF917B00899009284D2 /* HoeflTexEng in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AD917B00899009284D2 /* HoeflTexEng */; };
+		885B8AFA17B00899009284D2 /* HoeflTexEngTwo in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ADA17B00899009284D2 /* HoeflTexEngTwo */; };
+		885B8AFB17B00899009284D2 /* HoeflTexFle in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ADB17B00899009284D2 /* HoeflTexFle */; };
+		885B8AFC17B00899009284D2 /* HoeflTexIta in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ADC17B00899009284D2 /* HoeflTexIta */; };
+		885B8AFD17B00899009284D2 /* HoeflTexItaAlt in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ADD17B00899009284D2 /* HoeflTexItaAlt */; };
+		885B8AFE17B00899009284D2 /* HoeflTexItaSmaCap in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ADE17B00899009284D2 /* HoeflTexItaSmaCap */; };
+		885B8AFF17B00899009284D2 /* HoeflTexItaSwa in Resources */ = {isa = PBXBuildFile; fileRef = 885B8ADF17B00899009284D2 /* HoeflTexItaSwa */; };
+		885B8B0017B00899009284D2 /* HoeflTexItaSwaSC in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AE017B00899009284D2 /* HoeflTexItaSwaSC */; };
+		885B8B0117B00899009284D2 /* HoeflTexRom in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AE117B00899009284D2 /* HoeflTexRom */; };
+		885B8B0217B00899009284D2 /* HoeflTexRomAlt in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AE217B00899009284D2 /* HoeflTexRomAlt */; };
+		885B8B0317B00899009284D2 /* HoeflTexRomSmaCap in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AE317B00899009284D2 /* HoeflTexRomSmaCap */; };
+		885B8B0417B00899009284D2 /* HTF Hoefler Text 1 in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AE417B00899009284D2 /* HTF Hoefler Text 1 */; };
+		885B8B0517B00899009284D2 /* HTF Hoefler Text 2 in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AE517B00899009284D2 /* HTF Hoefler Text 2 */; };
+		885B8B0917B0195F009284D2 /* toofFairyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0717B0195F009284D2 /* toofFairyLogo.png */; };
+		885B8B0A17B0195F009284D2 /* toofFairyLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */; };
+		885B8B0D17B01CA3009284D2 /* startViewBackgroundComposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0B17B01CA3009284D2 /* startViewBackgroundComposed.png */; };
+		885B8B0E17B01CA3009284D2 /* startViewBackgroundComposed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +111,65 @@
 		88170CFC17AC1ED30059FE25 /* TFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFConstants.h; sourceTree = "<group>"; };
 		88170CFD17AC1ED30059FE25 /* TFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFConstants.m; sourceTree = "<group>"; };
 		88170CFF17AC33CD0059FE25 /* cellCheckmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellCheckmark.png; sourceTree = "<group>"; };
-		88170D0717AC4D2A0059FE25 /* TFEducationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFEducationTableViewController.h; sourceTree = "<group>"; };
-		88170D0817AC4D2A0059FE25 /* TFEducationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFEducationTableViewController.m; sourceTree = "<group>"; };
+		88170D0717AC4D2A0059FE25 /* TFEducationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFEducationTableViewController.h; path = ../TFEducationTableViewController.h; sourceTree = "<group>"; };
+		88170D0817AC4D2A0059FE25 /* TFEducationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFEducationTableViewController.m; path = ../TFEducationTableViewController.m; sourceTree = "<group>"; };
+		88170D0A17AC51650059FE25 /* TFEducationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFEducationViewController.h; path = ../TFEducationViewController.h; sourceTree = "<group>"; };
+		88170D0B17AC51650059FE25 /* TFEducationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFEducationViewController.m; path = ../TFEducationViewController.m; sourceTree = "<group>"; };
+		88170D0D17AC69500059FE25 /* TFAgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAgeViewController.h; sourceTree = "<group>"; };
+		88170D0E17AC69500059FE25 /* TFAgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFAgeViewController.m; sourceTree = "<group>"; };
+		88170D1017AC69650059FE25 /* TFIncomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFIncomeViewController.h; sourceTree = "<group>"; };
+		88170D1117AC69650059FE25 /* TFIncomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFIncomeViewController.m; sourceTree = "<group>"; };
+		88170D1317AC7B4B0059FE25 /* startBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBackground.png; sourceTree = "<group>"; };
+		88170D1517AC7FCC0059FE25 /* TFStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFStartViewController.h; sourceTree = "<group>"; };
+		88170D1617AC7FCD0059FE25 /* TFStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFStartViewController.m; sourceTree = "<group>"; };
+		88170D1817AC9AB90059FE25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		88170D1B17AC9C820059FE25 /* TRSDialScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSDialScrollView.h; sourceTree = "<group>"; };
+		88170D1C17AC9C820059FE25 /* TRSDialScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSDialScrollView.m; sourceTree = "<group>"; };
+		88170D1D17AC9C820059FE25 /* TRSDialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSDialView.h; sourceTree = "<group>"; };
+		88170D1E17AC9C820059FE25 /* TRSDialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSDialView.m; sourceTree = "<group>"; };
+		88170D2117AC9DEF0059FE25 /* DialShading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DialShading.png; sourceTree = "<group>"; };
+		88170D2217AC9DEF0059FE25 /* DialBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DialBackground.png; sourceTree = "<group>"; };
+		88170D2517AF76050059FE25 /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@2x.png"; sourceTree = "<group>"; };
+		88170D2717AFFA750059FE25 /* startButtonNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startButtonNormal@2x.png"; sourceTree = "<group>"; };
+		88170D2817AFFA760059FE25 /* startButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startButtonPressed@2x.png"; sourceTree = "<group>"; };
+		88170D2B17B004570059FE25 /* startButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startButtonNormal.png; sourceTree = "<group>"; };
+		88170D2C17B004580059FE25 /* startButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startButtonPressed.png; sourceTree = "<group>"; };
+		885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-Black.otf"; sourceTree = "<group>"; };
+		885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-Bd.otf"; sourceTree = "<group>"; };
+		885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-BdO.otf"; sourceTree = "<group>"; };
+		885B8AC917B00899009284D2 /* HoeflTexBla */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBla; sourceTree = "<group>"; };
+		885B8ACA17B00899009284D2 /* HoeflTexBlaAlt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaAlt; sourceTree = "<group>"; };
+		885B8ACB17B00899009284D2 /* HoeflTexBlaIta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaIta; sourceTree = "<group>"; };
+		885B8ACC17B00899009284D2 /* HoeflTexBlaItaAlt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaItaAlt; sourceTree = "<group>"; };
+		885B8ACD17B00899009284D2 /* HoeflTexBlaItaSC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaItaSC; sourceTree = "<group>"; };
+		885B8ACE17B00899009284D2 /* HoeflTexBlaItaSwa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaItaSwa; sourceTree = "<group>"; };
+		885B8ACF17B00899009284D2 /* HoeflTexBlaItaSwSC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaItaSwSC; sourceTree = "<group>"; };
+		885B8AD017B00899009284D2 /* HoeflTexBlaSmaCap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBlaSmaCap; sourceTree = "<group>"; };
+		885B8AD117B00899009284D2 /* HoeflTexBol */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBol; sourceTree = "<group>"; };
+		885B8AD217B00899009284D2 /* HoeflTexBolAlt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolAlt; sourceTree = "<group>"; };
+		885B8AD317B00899009284D2 /* HoeflTexBolIta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolIta; sourceTree = "<group>"; };
+		885B8AD417B00899009284D2 /* HoeflTexBolItaAlt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolItaAlt; sourceTree = "<group>"; };
+		885B8AD517B00899009284D2 /* HoeflTexBolItaSC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolItaSC; sourceTree = "<group>"; };
+		885B8AD617B00899009284D2 /* HoeflTexBolItaSwa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolItaSwa; sourceTree = "<group>"; };
+		885B8AD717B00899009284D2 /* HoeflTexBolItaSwSC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolItaSwSC; sourceTree = "<group>"; };
+		885B8AD817B00899009284D2 /* HoeflTexBolSmaCap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexBolSmaCap; sourceTree = "<group>"; };
+		885B8AD917B00899009284D2 /* HoeflTexEng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexEng; sourceTree = "<group>"; };
+		885B8ADA17B00899009284D2 /* HoeflTexEngTwo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexEngTwo; sourceTree = "<group>"; };
+		885B8ADB17B00899009284D2 /* HoeflTexFle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexFle; sourceTree = "<group>"; };
+		885B8ADC17B00899009284D2 /* HoeflTexIta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexIta; sourceTree = "<group>"; };
+		885B8ADD17B00899009284D2 /* HoeflTexItaAlt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexItaAlt; sourceTree = "<group>"; };
+		885B8ADE17B00899009284D2 /* HoeflTexItaSmaCap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexItaSmaCap; sourceTree = "<group>"; };
+		885B8ADF17B00899009284D2 /* HoeflTexItaSwa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexItaSwa; sourceTree = "<group>"; };
+		885B8AE017B00899009284D2 /* HoeflTexItaSwaSC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexItaSwaSC; sourceTree = "<group>"; };
+		885B8AE117B00899009284D2 /* HoeflTexRom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexRom; sourceTree = "<group>"; };
+		885B8AE217B00899009284D2 /* HoeflTexRomAlt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexRomAlt; sourceTree = "<group>"; };
+		885B8AE317B00899009284D2 /* HoeflTexRomSmaCap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoeflTexRomSmaCap; sourceTree = "<group>"; };
+		885B8AE417B00899009284D2 /* HTF Hoefler Text 1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "HTF Hoefler Text 1"; sourceTree = "<group>"; };
+		885B8AE517B00899009284D2 /* HTF Hoefler Text 2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "HTF Hoefler Text 2"; sourceTree = "<group>"; };
+		885B8B0717B0195F009284D2 /* toofFairyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toofFairyLogo.png; sourceTree = "<group>"; };
+		885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toofFairyLogo@2x.png"; sourceTree = "<group>"; };
+		885B8B0B17B01CA3009284D2 /* startViewBackgroundComposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startViewBackgroundComposed.png; sourceTree = "<group>"; };
+		885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startViewBackgroundComposed@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88170D1917AC9AB90059FE25 /* QuartzCore.framework in Frameworks */,
 				88170CBF17AB1A4D0059FE25 /* UIKit.framework in Frameworks */,
 				88170CC117AB1A4D0059FE25 /* Foundation.framework in Frameworks */,
 				88170CC317AB1A4D0059FE25 /* CoreGraphics.framework in Frameworks */,
@@ -81,8 +190,6 @@
 		88170CB217AB1A4D0059FE25 = {
 			isa = PBXGroup;
 			children = (
-				88170D0717AC4D2A0059FE25 /* TFEducationTableViewController.h */,
-				88170D0817AC4D2A0059FE25 /* TFEducationTableViewController.m */,
 				88170CC417AB1A4D0059FE25 /* ToothFairy */,
 				88170CBD17AB1A4D0059FE25 /* Frameworks */,
 				88170CBC17AB1A4D0059FE25 /* Products */,
@@ -100,6 +207,7 @@
 		88170CBD17AB1A4D0059FE25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88170D1817AC9AB90059FE25 /* QuartzCore.framework */,
 				88170CBE17AB1A4D0059FE25 /* UIKit.framework */,
 				88170CC017AB1A4D0059FE25 /* Foundation.framework */,
 				88170CC217AB1A4D0059FE25 /* CoreGraphics.framework */,
@@ -115,6 +223,7 @@
 				88170CF917AB4B720059FE25 /* Base */,
 				88170CD617AB1A4D0059FE25 /* MainStoryboard.storyboard */,
 				88170CFB17AB4B990059FE25 /* Controler */,
+				88170D1A17AC9C820059FE25 /* TRSDialScrollView */,
 				88170CFA17AB4B820059FE25 /* Model */,
 				88170CC517AB1A4D0059FE25 /* Supporting Files */,
 			);
@@ -124,6 +233,7 @@
 		88170CC517AB1A4D0059FE25 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				885B8B0617B008A5009284D2 /* Fonts */,
 				88170CEF17AB36020059FE25 /* Images */,
 				88170CC617AB1A4D0059FE25 /* ToothFairy-Info.plist */,
 				88170CC717AB1A4D0059FE25 /* InfoPlist.strings */,
@@ -139,6 +249,18 @@
 		88170CEF17AB36020059FE25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				885B8B0B17B01CA3009284D2 /* startViewBackgroundComposed.png */,
+				885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */,
+				885B8B0717B0195F009284D2 /* toofFairyLogo.png */,
+				885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */,
+				88170D2B17B004570059FE25 /* startButtonNormal.png */,
+				88170D2C17B004580059FE25 /* startButtonPressed.png */,
+				88170D2717AFFA750059FE25 /* startButtonNormal@2x.png */,
+				88170D2817AFFA760059FE25 /* startButtonPressed@2x.png */,
+				88170D2517AF76050059FE25 /* downArrow@2x.png */,
+				88170D2117AC9DEF0059FE25 /* DialShading.png */,
+				88170D2217AC9DEF0059FE25 /* DialBackground.png */,
+				88170D1317AC7B4B0059FE25 /* startBackground.png */,
 				88170CFF17AC33CD0059FE25 /* cellCheckmark.png */,
 				88170CED17AB35FD0059FE25 /* plane.png */,
 			);
@@ -170,6 +292,16 @@
 		88170CFB17AB4B990059FE25 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
+				88170D1517AC7FCC0059FE25 /* TFStartViewController.h */,
+				88170D1617AC7FCD0059FE25 /* TFStartViewController.m */,
+				88170D0A17AC51650059FE25 /* TFEducationViewController.h */,
+				88170D0B17AC51650059FE25 /* TFEducationViewController.m */,
+				88170D0717AC4D2A0059FE25 /* TFEducationTableViewController.h */,
+				88170D0817AC4D2A0059FE25 /* TFEducationTableViewController.m */,
+				88170D0D17AC69500059FE25 /* TFAgeViewController.h */,
+				88170D0E17AC69500059FE25 /* TFAgeViewController.m */,
+				88170D1017AC69650059FE25 /* TFIncomeViewController.h */,
+				88170D1117AC69650059FE25 /* TFIncomeViewController.m */,
 				88170CE717AB2E470059FE25 /* TFGenderTableViewController.h */,
 				88170CE817AB2E470059FE25 /* TFGenderTableViewController.m */,
 				88170CEA17AB2E620059FE25 /* TFGenderViewController.h */,
@@ -178,6 +310,97 @@
 				88170CDA17AB1A4D0059FE25 /* TFViewController.m */,
 			);
 			name = Controler;
+			sourceTree = "<group>";
+		};
+		88170D1A17AC9C820059FE25 /* TRSDialScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				88170D1B17AC9C820059FE25 /* TRSDialScrollView.h */,
+				88170D1C17AC9C820059FE25 /* TRSDialScrollView.m */,
+				88170D1D17AC9C820059FE25 /* TRSDialView.h */,
+				88170D1E17AC9C820059FE25 /* TRSDialView.m */,
+			);
+			name = TRSDialScrollView;
+			path = ../TRSDialScrollView;
+			sourceTree = "<group>";
+		};
+		885B8AC117B00899009284D2 /* HelveticaRound */ = {
+			isa = PBXGroup;
+			children = (
+				885B8AC217B00899009284D2 /* Helvetica Rounded LT Std Black */,
+				885B8AC417B00899009284D2 /* Helvetica Rounded LT Std Bold */,
+				885B8AC617B00899009284D2 /* Helvetica Rounded LT Std Bold Oblique */,
+			);
+			path = HelveticaRound;
+			sourceTree = "<group>";
+		};
+		885B8AC217B00899009284D2 /* Helvetica Rounded LT Std Black */ = {
+			isa = PBXGroup;
+			children = (
+				885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */,
+			);
+			path = "Helvetica Rounded LT Std Black";
+			sourceTree = "<group>";
+		};
+		885B8AC417B00899009284D2 /* Helvetica Rounded LT Std Bold */ = {
+			isa = PBXGroup;
+			children = (
+				885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */,
+			);
+			path = "Helvetica Rounded LT Std Bold";
+			sourceTree = "<group>";
+		};
+		885B8AC617B00899009284D2 /* Helvetica Rounded LT Std Bold Oblique */ = {
+			isa = PBXGroup;
+			children = (
+				885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */,
+			);
+			path = "Helvetica Rounded LT Std Bold Oblique";
+			sourceTree = "<group>";
+		};
+		885B8AC817B00899009284D2 /* HoeflerText  */ = {
+			isa = PBXGroup;
+			children = (
+				885B8AC917B00899009284D2 /* HoeflTexBla */,
+				885B8ACA17B00899009284D2 /* HoeflTexBlaAlt */,
+				885B8ACB17B00899009284D2 /* HoeflTexBlaIta */,
+				885B8ACC17B00899009284D2 /* HoeflTexBlaItaAlt */,
+				885B8ACD17B00899009284D2 /* HoeflTexBlaItaSC */,
+				885B8ACE17B00899009284D2 /* HoeflTexBlaItaSwa */,
+				885B8ACF17B00899009284D2 /* HoeflTexBlaItaSwSC */,
+				885B8AD017B00899009284D2 /* HoeflTexBlaSmaCap */,
+				885B8AD117B00899009284D2 /* HoeflTexBol */,
+				885B8AD217B00899009284D2 /* HoeflTexBolAlt */,
+				885B8AD317B00899009284D2 /* HoeflTexBolIta */,
+				885B8AD417B00899009284D2 /* HoeflTexBolItaAlt */,
+				885B8AD517B00899009284D2 /* HoeflTexBolItaSC */,
+				885B8AD617B00899009284D2 /* HoeflTexBolItaSwa */,
+				885B8AD717B00899009284D2 /* HoeflTexBolItaSwSC */,
+				885B8AD817B00899009284D2 /* HoeflTexBolSmaCap */,
+				885B8AD917B00899009284D2 /* HoeflTexEng */,
+				885B8ADA17B00899009284D2 /* HoeflTexEngTwo */,
+				885B8ADB17B00899009284D2 /* HoeflTexFle */,
+				885B8ADC17B00899009284D2 /* HoeflTexIta */,
+				885B8ADD17B00899009284D2 /* HoeflTexItaAlt */,
+				885B8ADE17B00899009284D2 /* HoeflTexItaSmaCap */,
+				885B8ADF17B00899009284D2 /* HoeflTexItaSwa */,
+				885B8AE017B00899009284D2 /* HoeflTexItaSwaSC */,
+				885B8AE117B00899009284D2 /* HoeflTexRom */,
+				885B8AE217B00899009284D2 /* HoeflTexRomAlt */,
+				885B8AE317B00899009284D2 /* HoeflTexRomSmaCap */,
+				885B8AE417B00899009284D2 /* HTF Hoefler Text 1 */,
+				885B8AE517B00899009284D2 /* HTF Hoefler Text 2 */,
+			);
+			path = "HoeflerText ";
+			sourceTree = "<group>";
+		};
+		885B8B0617B008A5009284D2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				885B8AC117B00899009284D2 /* HelveticaRound */,
+				885B8AC817B00899009284D2 /* HoeflerText  */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +462,50 @@
 				88170CD817AB1A4D0059FE25 /* MainStoryboard.storyboard in Resources */,
 				88170CEE17AB35FD0059FE25 /* plane.png in Resources */,
 				88170D0017AC33CD0059FE25 /* cellCheckmark.png in Resources */,
+				88170D1417AC7B4B0059FE25 /* startBackground.png in Resources */,
+				88170D2317AC9DEF0059FE25 /* DialShading.png in Resources */,
+				88170D2417AC9DEF0059FE25 /* DialBackground.png in Resources */,
+				88170D2617AF76060059FE25 /* downArrow@2x.png in Resources */,
+				88170D2917AFFA760059FE25 /* startButtonNormal@2x.png in Resources */,
+				88170D2A17AFFA760059FE25 /* startButtonPressed@2x.png in Resources */,
+				88170D2D17B004580059FE25 /* startButtonNormal.png in Resources */,
+				88170D2E17B004580059FE25 /* startButtonPressed.png in Resources */,
+				885B8AE617B00899009284D2 /* HelveticaRoundedLTStd-Black.otf in Resources */,
+				885B8AE717B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf in Resources */,
+				885B8AE817B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf in Resources */,
+				885B8AE917B00899009284D2 /* HoeflTexBla in Resources */,
+				885B8AEA17B00899009284D2 /* HoeflTexBlaAlt in Resources */,
+				885B8AEB17B00899009284D2 /* HoeflTexBlaIta in Resources */,
+				885B8AEC17B00899009284D2 /* HoeflTexBlaItaAlt in Resources */,
+				885B8AED17B00899009284D2 /* HoeflTexBlaItaSC in Resources */,
+				885B8AEE17B00899009284D2 /* HoeflTexBlaItaSwa in Resources */,
+				885B8AEF17B00899009284D2 /* HoeflTexBlaItaSwSC in Resources */,
+				885B8AF017B00899009284D2 /* HoeflTexBlaSmaCap in Resources */,
+				885B8AF117B00899009284D2 /* HoeflTexBol in Resources */,
+				885B8AF217B00899009284D2 /* HoeflTexBolAlt in Resources */,
+				885B8AF317B00899009284D2 /* HoeflTexBolIta in Resources */,
+				885B8AF417B00899009284D2 /* HoeflTexBolItaAlt in Resources */,
+				885B8AF517B00899009284D2 /* HoeflTexBolItaSC in Resources */,
+				885B8AF617B00899009284D2 /* HoeflTexBolItaSwa in Resources */,
+				885B8AF717B00899009284D2 /* HoeflTexBolItaSwSC in Resources */,
+				885B8AF817B00899009284D2 /* HoeflTexBolSmaCap in Resources */,
+				885B8AF917B00899009284D2 /* HoeflTexEng in Resources */,
+				885B8AFA17B00899009284D2 /* HoeflTexEngTwo in Resources */,
+				885B8AFB17B00899009284D2 /* HoeflTexFle in Resources */,
+				885B8AFC17B00899009284D2 /* HoeflTexIta in Resources */,
+				885B8AFD17B00899009284D2 /* HoeflTexItaAlt in Resources */,
+				885B8AFE17B00899009284D2 /* HoeflTexItaSmaCap in Resources */,
+				885B8AFF17B00899009284D2 /* HoeflTexItaSwa in Resources */,
+				885B8B0017B00899009284D2 /* HoeflTexItaSwaSC in Resources */,
+				885B8B0117B00899009284D2 /* HoeflTexRom in Resources */,
+				885B8B0217B00899009284D2 /* HoeflTexRomAlt in Resources */,
+				885B8B0317B00899009284D2 /* HoeflTexRomSmaCap in Resources */,
+				885B8B0417B00899009284D2 /* HTF Hoefler Text 1 in Resources */,
+				885B8B0517B00899009284D2 /* HTF Hoefler Text 2 in Resources */,
+				885B8B0917B0195F009284D2 /* toofFairyLogo.png in Resources */,
+				885B8B0A17B0195F009284D2 /* toofFairyLogo@2x.png in Resources */,
+				885B8B0D17B01CA3009284D2 /* startViewBackgroundComposed.png in Resources */,
+				885B8B0E17B01CA3009284D2 /* startViewBackgroundComposed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +526,12 @@
 				88170CF817AB4B690059FE25 /* TFBaseTableViewController.m in Sources */,
 				88170CFE17AC1ED30059FE25 /* TFConstants.m in Sources */,
 				88170D0917AC4D2A0059FE25 /* TFEducationTableViewController.m in Sources */,
+				88170D0C17AC51650059FE25 /* TFEducationViewController.m in Sources */,
+				88170D0F17AC69510059FE25 /* TFAgeViewController.m in Sources */,
+				88170D1217AC69660059FE25 /* TFIncomeViewController.m in Sources */,
+				88170D1717AC7FCE0059FE25 /* TFStartViewController.m in Sources */,
+				88170D1F17AC9C820059FE25 /* TRSDialScrollView.m in Sources */,
+				88170D2017AC9C820059FE25 /* TRSDialView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +654,7 @@
 				88170CE017AB1A4D0059FE25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

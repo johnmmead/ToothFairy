@@ -16,5 +16,16 @@
          landmarkName = "-setAccessoryType:"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ToothFairy/TFStartViewController.m"
+         timestampString = "397414091.875794"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "8"
+         endingLineNumber = "8">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

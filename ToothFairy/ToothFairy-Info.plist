@@ -34,5 +34,12 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HoeflTexBolItaSwa</string>
+		<string>HelveticaRoundedLTStd-Black.otf</string>
+		<string>HelveticaRoundedLTStd-Bd.otf</string>
+		<string>HelveticaRoundedLTStd-BdO.otf</string>
+	</array>
 </dict>
 </plist>

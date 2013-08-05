@@ -12,5 +12,6 @@
 @interface TFBaseViewController : UIViewController
 
 - (TFModel *)model;
+- (BOOL)hasRetinaDisplay;
 
 @end

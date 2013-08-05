@@ -10,9 +10,14 @@
 
 @implementation TFConstants
 
-//+(UIColor *) kFitzeeSelected  { return [UIColor colorWithRed:0.487 green:0.000 blue:0.000 alpha:1.000]; }
++(UIColor *) kTickmarkColor  { return [UIColor colorWithRed:0.812 green:0.925 blue:0.945 alpha:1.000]; }
 
-+(NSString *) kCellIdentifier{ return @"Cell"; }
++(UIColor *) kLavenderTextColor  { return [UIColor colorWithRed:0.675 green:0.733 blue:0.906 alpha:1.000]; }
+
++ (UIImageView *) kCellCheckmarkImage { return [[UIImageView alloc ]
+    initWithImage:[UIImage imageNamed:@"cellCheckmark.png"]]; }
+
++ (NSString *) kCellIdentifier{ return @"Cell"; }
 
 
 @end

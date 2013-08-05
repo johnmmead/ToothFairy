@@ -7,16 +7,15 @@
 //
 
 #import "TFGenderTableViewController.h"
+#import "TFEducationViewController.h"
 
 @interface TFGenderTableViewController ()
 
 @property (strong, nonatomic) NSArray *selections;
 
-
 @end
 
 @implementation TFGenderTableViewController
-
 
 @synthesize selections;
 
@@ -34,7 +33,7 @@
     [super viewDidLoad];
 
     // populate the possible choices
-    self.selections = @[@"Male", @"Female"];
+    self.selections = @[@"male", @"female"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,8 +64,7 @@
     // align state to model
     if([[self model].gender isEqualToString:selection]){
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        cell.accessoryView = [[ UIImageView alloc ]
-                                  initWithImage:[UIImage imageNamed:@"cellCheckmark.png"]];
+        cell.accessoryView = [TFConstants kCellCheckmarkImage];
     } else {
         cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryView = nil;
@@ -77,6 +75,7 @@
 
 #pragma mark - Table view delegate
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // align model to state of selection in control
@@ -86,19 +85,12 @@
     // set selection checkmark on selected row
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    cell.accessoryView = [[ UIImageView alloc ]
-                          initWithImage:[UIImage imageNamed:@"cellCheckmark.png"]];
+    cell.accessoryView = [TFConstants kCellCheckmarkImage];
     [tableView reloadData];
-    
-//    [self.tableView reloadRowsAtIndexPaths:[self.tableView indexPathsForVisibleRows]
-//                          withRowAnimation:UITableViewRowAnimationAutomatic];
-    
 
-    // push on to next view controller
-//       *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@";" bundle:nil];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:detailViewController animated:YES];
+    // perform segue
+    [self.parentViewController performSegueWithIdentifier:@"educationViewController" sender:self];
+
 }
 
 @end
