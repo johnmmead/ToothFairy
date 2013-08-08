@@ -9,6 +9,11 @@
 #import "TFGenderTableViewController.h"
 #import "TFEducationViewController.h"
 
+#import "TFCell.h"
+
+#import <QuartzCore/QuartzCore.h>
+
+
 @interface TFGenderTableViewController ()
 
 @property (strong, nonatomic) NSArray *selections;
@@ -31,9 +36,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // table set up
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:[TFConstants kCellIdentifier]];
+}
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
     // populate the possible choices
-    self.selections = @[@"male", @"female"];
+    self.selections = @[@"Male", @"Female"];
+    [self.tableView reloadData];
+    
+    // table stuff
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.backgroundView = nil;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,13 +72,20 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+{    
     NSString *selection = [self.selections objectAtIndex:indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
+    TFCell *cell = [tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
     cell.textLabel.text = selection;
-    cell.backgroundColor = [UIColor clearColor];
     
+//    if(indexPath.row < selections.count -1){
+//        UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlueDotted"]];
+//        cell.backgroundColor = backgroundPatternColor;
+////    } else {
+////        UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlue"]];
+////        cell.backgroundColor = backgroundPatternColor;
+//    }
+
     // align state to model
     if([[self model].gender isEqualToString:selection]){
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -83,7 +108,7 @@
     [self model].gender = selection;
     
     // set selection checkmark on selected row
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
+    TFCell *cell = [tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     cell.accessoryView = [TFConstants kCellCheckmarkImage];
     [tableView reloadData];

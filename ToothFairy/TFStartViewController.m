@@ -7,6 +7,7 @@
 //
 
 #import "TFStartViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface TFStartViewController ()
 
@@ -26,10 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    float fontSize = [self hasRetinaDisplay] ? 32.f : 16.0f;
-    self.whatIsTheGoingRateLabel.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:fontSize];
-    self.whatIsTheGoingRateLabel.textColor = [TFConstants kLavenderTextColor]; //jmead
+
 }
 
 - (void)viewWillAppear:(BOOL)animated

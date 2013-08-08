@@ -31,23 +31,25 @@
     
     [[TRSDialScrollView appearance] setLabelStrokeColor:[UIColor colorWithRed:0.400 green:0.525 blue:0.643 alpha:1.000]];
     [[TRSDialScrollView appearance] setLabelStrokeWidth:0.1f];
-    [[TRSDialScrollView appearance] setLabelFillColor:[TFConstants kTickmarkColor]];
+    [[TRSDialScrollView appearance] setLabelFillColor:[UIColor whiteColor]];
 
-    [[TRSDialScrollView appearance] setLabelFont:[UIFont fontWithName:@"Avenir" size:28]];
+    [[TRSDialScrollView appearance] setLabelFont:[UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:32.0f]];
     
+    
+
     [[TRSDialScrollView appearance] setMinorTickColor:[TFConstants kTickmarkColor]];
-    [[TRSDialScrollView appearance] setMinorTickLength:14.0];
+    [[TRSDialScrollView appearance] setMinorTickLength:10.0];
     [[TRSDialScrollView appearance] setMinorTickWidth:4.0];
     
     [[TRSDialScrollView appearance] setMajorTickColor:[TFConstants kTickmarkColor]];
-    [[TRSDialScrollView appearance] setMajorTickLength:24.0];
+    [[TRSDialScrollView appearance] setMajorTickLength:18.0];
     [[TRSDialScrollView appearance] setMajorTickWidth:4.0];
     
     [[TRSDialScrollView appearance] setShadowColor:[UIColor colorWithRed:0.593 green:0.619 blue:0.643 alpha:1.000]];
     [[TRSDialScrollView appearance] setShadowOffset:CGSizeMake(0, 1)];
     [[TRSDialScrollView appearance] setShadowBlur:0.9f];
     
-    [_dialView setDialRangeFrom:0 to:125];
+    [_dialView setDialRangeFrom:0 to:100];
     
     _dialView.currentValue = 40;
     _dialView.delegate = self;

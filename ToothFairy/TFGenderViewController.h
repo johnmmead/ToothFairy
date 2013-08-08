@@ -10,4 +10,6 @@
 
 @interface TFGenderViewController : TFBaseViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *mainTitle;
+
 @end

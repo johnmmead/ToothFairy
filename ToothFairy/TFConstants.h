@@ -11,7 +11,8 @@
 @interface TFConstants : NSObject
 
 + (UIColor *) kTickmarkColor;
-+(UIColor *) kLavenderTextColor;
++ (UIColor *) kLavenderTextColor;
++ (UIColor *) kMainTitleTextColor;
 + (NSString *) kCellIdentifier;
 + (UIImageView *) kCellCheckmarkImage;
 

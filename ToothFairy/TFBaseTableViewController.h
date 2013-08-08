@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TFModel.h"
+#import "StyledTableViewCell.h"
 
 @interface TFBaseTableViewController : UITableViewController
 

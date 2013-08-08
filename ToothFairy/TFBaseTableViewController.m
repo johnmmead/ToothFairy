@@ -34,6 +34,12 @@
     self.clearsSelectionOnViewWillAppear = NO;
 }
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -52,6 +58,11 @@
     	_tfCheckmark = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cellCheckmark"]];
     
     return _tfCheckmark;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlue"]];
+    cell.backgroundColor = backgroundPatternColor; //jmead
 }
 
 //#pragma mark - Table view data source

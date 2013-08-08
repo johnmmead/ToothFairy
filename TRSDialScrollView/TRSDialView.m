@@ -26,7 +26,11 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
 
 @end
 
-@implementation TRSDialView
+@implementation TRSDialView{
+    
+    int _verticalOffset;
+    
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -58,6 +62,8 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
         _shadowColor = [UIColor colorWithWhite:1.000 alpha:1.000];
         _shadowOffset = CGSizeMake(1, 1);
         _shadowBlur = 0.9f;
+        
+        _verticalOffset = 10;
 
     }
 
@@ -130,8 +136,8 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
     CGContextSetStrokeColorWithColor(context, color.CGColor);
     CGContextSetLineWidth(context, width);
 
-    CGContextMoveToPoint(context, point.x, point.y);
-    CGContextAddLineToPoint(context, point.x, point.y + length);
+    CGContextMoveToPoint(context, point.x, point.y + _verticalOffset);
+    CGContextAddLineToPoint(context, point.x, point.y + length + (_verticalOffset / 2));
 
     CGContextStrokePath(context);
 }
@@ -147,8 +153,8 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
     CGContextSetLineWidth(context, width);
     CGContextSetLineCap(context, kCGLineCapRound);
 
-    CGContextMoveToPoint(context, point.x, point.y);
-    CGContextAddLineToPoint(context, point.x, point.y + length);
+    CGContextMoveToPoint(context, point.x, point.y + _verticalOffset);
+    CGContextAddLineToPoint(context, point.x, point.y + length + (_verticalOffset / 2));
 
     CGContextStrokePath(context);
 

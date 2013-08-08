@@ -14,6 +14,8 @@
 
 @implementation TFGenderViewController
 
+@synthesize mainTitle;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,7 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.mainTitle.font = [UIFont fontWithName:@"Baskerville-SemiBold" size:32.0f];
+    self.mainTitle.textColor = [TFConstants kMainTitleTextColor];
+    self.mainTitle.text = [@"select your gender" uppercaseString];
+
 }
 
 - (void)didReceiveMemoryWarning
