@@ -8,6 +8,7 @@
 
 #import "TFBaseTableViewController.h"
 #import "TFAppDelegate.h"
+#import "TFCell.h"
 
 @interface TFBaseTableViewController ()
 
@@ -16,6 +17,8 @@
 @implementation TFBaseTableViewController{
     UIImageView *_tfCheckmark;
 }
+
+@synthesize selections;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,9 +32,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // table set up
+//    [self.tableView registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:[TFConstants kCellIdentifier]];
 
-    // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.rowHeight = 60.0;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    self.tableView.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"cellSeparatorDotted2"]];
+//    self.tableView.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"plane"]];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 }
 
 
@@ -61,86 +71,78 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlue"]];
-    cell.backgroundColor = backgroundPatternColor; //jmead
+
+    TFCell *tfCell = (TFCell *)cell;
+    
+//    tfCell.contentView.hidden = YES;
+    
+//    UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlue"]];
+//    tfCell.backgroundColor = backgroundPatternColor; //jmead
+//
+    
+   // cell.frame=CGRectMake(44,0,tableView.bounds.size.width,44); //jmead
+    
+    NSString *selection = [self.selections objectAtIndex:indexPath.row];
+    tfCell.label.text = selection;
+    //tfCell.textLabel.text = selection;
+    
+//    if(indexPath.row < selections.count -1){
+//        UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlueDotted"]];
+//        cell.backgroundColor = backgroundPatternColor;
+//    } else {
+//        UIColor *backgroundPatternColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundTileBlue"]];
+//        cell.backgroundColor = backgroundPatternColor;
+//    }
 }
 
-//#pragma mark - Table view data source
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *selection = [self.selections objectAtIndex:indexPath.row];
+    TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
+ 
+//    cell.cellText.text = selection;
+ cell.textLabel.text = selection;
+
+//    cell.textLabel.text = selection;
+
+    // align state to model
+//    if([[self model].gender isEqualToString:selection]){
+//        cell.cellImage.image = [UIImage imageNamed:@"cellCheckmark"];
+////        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+////        cell.accessoryView = [TFConstants kCellCheckmarkImage];
+//    } else {
+//        cell.cellImage.image = nil;
 //
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 0;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"Cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-//    
-//    // Configure the cell...
-//    
-//    return cell;
-//}
-//
-///*
-//// Override to support conditional editing of the table view.
-//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Return NO if you do not want the specified item to be editable.
-//    return YES;
-//}
-//*/
-//
-///*
-//// Override to support editing the table view.
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        // Delete the row from the data source
-//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    }   
-//    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//    }   
-//}
-//*/
-//
-///*
-//// Override to support rearranging the table view.
-//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-//{
-//}
-//*/
-//
-///*
-//// Override to support conditional rearranging of the table view.
-//- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Return NO if you do not want the item to be re-orderable.
-//    return YES;
-//}
-//*/
-//
-//#pragma mark - Table view delegate
-//
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Navigation logic may go here. Create and push another view controller.
-//    /*
-//     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:detailViewController animated:YES];
-//     */
-//}
+////        cell.accessoryType = UITableViewCellAccessoryNone;
+////        cell.accessoryView = nil;
+//    }
+
+    
+    
+    
+//    if([[self model].gender isEqualToString:selection]){
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//        cell.accessoryView = [TFConstants kCellCheckmarkImage];
+//    } else {
+//        cell.accessoryType = UITableViewCellAccessoryNone;
+//        cell.accessoryView = nil;
+//    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{    
+    // set selection checkmark on selected row
+    TFCell *cell = [tableView dequeueReusableCellWithIdentifier:[TFConstants kCellIdentifier] forIndexPath:indexPath];
+
+    cell.image.image = [UIImage imageNamed:@"cellCheckmark"];
+
+//    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    cell.accessoryView = [TFConstants kCellCheckmarkImage];
+    [tableView reloadData];
+    
+}
+
 
 @end

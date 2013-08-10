@@ -37,11 +37,6 @@
 		88170D2017AC9C820059FE25 /* TRSDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D1E17AC9C820059FE25 /* TRSDialView.m */; };
 		88170D2317AC9DEF0059FE25 /* DialShading.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2117AC9DEF0059FE25 /* DialShading.png */; };
 		88170D2417AC9DEF0059FE25 /* DialBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2217AC9DEF0059FE25 /* DialBackground.png */; };
-		88170D2617AF76060059FE25 /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2517AF76050059FE25 /* downArrow@2x.png */; };
-		88170D2917AFFA760059FE25 /* startButtonNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2717AFFA750059FE25 /* startButtonNormal@2x.png */; };
-		88170D2A17AFFA760059FE25 /* startButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2817AFFA760059FE25 /* startButtonPressed@2x.png */; };
-		88170D2D17B004580059FE25 /* startButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2B17B004570059FE25 /* startButtonNormal.png */; };
-		88170D2E17B004580059FE25 /* startButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2C17B004580059FE25 /* startButtonPressed.png */; };
 		885B8AE617B00899009284D2 /* HelveticaRoundedLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */; };
 		885B8AE717B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */; };
 		885B8AE817B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */; };
@@ -61,8 +56,22 @@
 		885B8B2B17B0C584009284D2 /* backgroundTileBlueDotted.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */; };
 		885B8B2E17B2010E009284D2 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2C17B2010E009284D2 /* downArrow.png */; };
 		885B8B2F17B2010E009284D2 /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2D17B2010E009284D2 /* downArrow@2x.png */; };
-		885B8BA417B414C9009284D2 /* TFCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885B8BA317B414C8009284D2 /* TFCell.xib */; };
-		885B8BA717B4150F009284D2 /* TFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8BA617B4150F009284D2 /* TFCell.m */; };
+		885B8BA917B43762009284D2 /* cellSeparatorDotted.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8BA817B43762009284D2 /* cellSeparatorDotted.png */; };
+		885B8BAB17B4390E009284D2 /* cellSeparatorDotted2.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8BAA17B4390E009284D2 /* cellSeparatorDotted2.png */; };
+		885B8BB017B46608009284D2 /* TFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8BAF17B46608009284D2 /* TFCell.m */; };
+		885B8CCF17B56880009284D2 /* TFCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CCE17B56880009284D2 /* TFCell.xib */; };
+		885B8CD117B6AD69009284D2 /* States.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD017B6AD68009284D2 /* States.plist */; };
+		885B8CD417B6BB52009284D2 /* buttonStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD217B6BB52009284D2 /* buttonStart.png */; };
+		885B8CD517B6BB52009284D2 /* buttonStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD317B6BB52009284D2 /* buttonStart@2x.png */; };
+		885B8CDB17B6BF19009284D2 /* buttonFairyBarButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD617B6BF18009284D2 /* buttonFairyBarButton.png */; };
+		885B8CDC17B6BF19009284D2 /* buttonNext.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD717B6BF18009284D2 /* buttonNext.png */; };
+		885B8CDD17B6BF19009284D2 /* buttonNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD817B6BF19009284D2 /* buttonNext@2x.png */; };
+		885B8CDE17B6BF19009284D2 /* buttonShare.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD917B6BF19009284D2 /* buttonShare.png */; };
+		885B8CDF17B6BF19009284D2 /* buttonShare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CDA17B6BF19009284D2 /* buttonShare@2x.png */; };
+		885B8CE317B6C070009284D2 /* disclaimerBackground-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */; };
+		885B8CE417B6C070009284D2 /* disclaimerBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE117B6C070009284D2 /* disclaimerBackground@2x.png */; };
+		885B8CE517B6C070009284D2 /* disclaimerBackgroundpng.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */; };
+		885B8CE817B6C1F9009284D2 /* TFDisclaimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8CE717B6C1F9009284D2 /* TFDisclaimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,10 +124,6 @@
 		88170D2117AC9DEF0059FE25 /* DialShading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DialShading.png; sourceTree = "<group>"; };
 		88170D2217AC9DEF0059FE25 /* DialBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DialBackground.png; sourceTree = "<group>"; };
 		88170D2517AF76050059FE25 /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@2x.png"; sourceTree = "<group>"; };
-		88170D2717AFFA750059FE25 /* startButtonNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startButtonNormal@2x.png"; sourceTree = "<group>"; };
-		88170D2817AFFA760059FE25 /* startButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startButtonPressed@2x.png"; sourceTree = "<group>"; };
-		88170D2B17B004570059FE25 /* startButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startButtonNormal.png; sourceTree = "<group>"; };
-		88170D2C17B004580059FE25 /* startButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startButtonPressed.png; sourceTree = "<group>"; };
 		885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-Black.otf"; sourceTree = "<group>"; };
 		885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-Bd.otf"; sourceTree = "<group>"; };
 		885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-BdO.otf"; sourceTree = "<group>"; };
@@ -140,9 +145,24 @@
 		885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundTileBlueDotted.png; sourceTree = "<group>"; };
 		885B8B2C17B2010E009284D2 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
 		885B8B2D17B2010E009284D2 /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@2x.png"; sourceTree = "<group>"; };
-		885B8BA317B414C8009284D2 /* TFCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFCell.xib; sourceTree = "<group>"; };
-		885B8BA517B4150E009284D2 /* TFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCell.h; sourceTree = "<group>"; };
-		885B8BA617B4150F009284D2 /* TFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFCell.m; sourceTree = "<group>"; };
+		885B8BA817B43762009284D2 /* cellSeparatorDotted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellSeparatorDotted.png; sourceTree = "<group>"; };
+		885B8BAA17B4390E009284D2 /* cellSeparatorDotted2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellSeparatorDotted2.png; sourceTree = "<group>"; };
+		885B8BAE17B46607009284D2 /* TFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCell.h; path = ../TFCell.h; sourceTree = "<group>"; };
+		885B8BAF17B46608009284D2 /* TFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFCell.m; path = ../TFCell.m; sourceTree = "<group>"; };
+		885B8CCE17B56880009284D2 /* TFCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFCell.xib; sourceTree = "<group>"; };
+		885B8CD017B6AD68009284D2 /* States.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = States.plist; path = ../States.plist; sourceTree = "<group>"; };
+		885B8CD217B6BB52009284D2 /* buttonStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonStart.png; sourceTree = "<group>"; };
+		885B8CD317B6BB52009284D2 /* buttonStart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonStart@2x.png"; sourceTree = "<group>"; };
+		885B8CD617B6BF18009284D2 /* buttonFairyBarButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonFairyBarButton.png; sourceTree = "<group>"; };
+		885B8CD717B6BF18009284D2 /* buttonNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonNext.png; sourceTree = "<group>"; };
+		885B8CD817B6BF19009284D2 /* buttonNext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonNext@2x.png"; sourceTree = "<group>"; };
+		885B8CD917B6BF19009284D2 /* buttonShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonShare.png; sourceTree = "<group>"; };
+		885B8CDA17B6BF19009284D2 /* buttonShare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonShare@2x.png"; sourceTree = "<group>"; };
+		885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disclaimerBackground-568@2x.png"; sourceTree = "<group>"; };
+		885B8CE117B6C070009284D2 /* disclaimerBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disclaimerBackground@2x.png"; sourceTree = "<group>"; };
+		885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclaimerBackgroundpng.png; sourceTree = "<group>"; };
+		885B8CE617B6C1F9009284D2 /* TFDisclaimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDisclaimerViewController.h; sourceTree = "<group>"; };
+		885B8CE717B6C1F9009284D2 /* TFDisclaimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDisclaimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +229,7 @@
 				885B8B0617B008A5009284D2 /* Fonts */,
 				88170CEF17AB36020059FE25 /* Images */,
 				88170CC617AB1A4D0059FE25 /* ToothFairy-Info.plist */,
+				885B8CD017B6AD68009284D2 /* States.plist */,
 				88170CC717AB1A4D0059FE25 /* InfoPlist.strings */,
 				88170CCA17AB1A4D0059FE25 /* main.m */,
 				88170CCC17AB1A4D0059FE25 /* ToothFairy-Prefix.pch */,
@@ -222,6 +243,18 @@
 		88170CEF17AB36020059FE25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */,
+				885B8CE117B6C070009284D2 /* disclaimerBackground@2x.png */,
+				885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */,
+				885B8CD617B6BF18009284D2 /* buttonFairyBarButton.png */,
+				885B8CD717B6BF18009284D2 /* buttonNext.png */,
+				885B8CD817B6BF19009284D2 /* buttonNext@2x.png */,
+				885B8CD917B6BF19009284D2 /* buttonShare.png */,
+				885B8CDA17B6BF19009284D2 /* buttonShare@2x.png */,
+				885B8CD217B6BB52009284D2 /* buttonStart.png */,
+				885B8CD317B6BB52009284D2 /* buttonStart@2x.png */,
+				885B8BAA17B4390E009284D2 /* cellSeparatorDotted2.png */,
+				885B8BA817B43762009284D2 /* cellSeparatorDotted.png */,
 				885B8B2C17B2010E009284D2 /* downArrow.png */,
 				885B8B2D17B2010E009284D2 /* downArrow@2x.png */,
 				885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */,
@@ -238,10 +271,6 @@
 				885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */,
 				885B8B0717B0195F009284D2 /* toofFairyLogo.png */,
 				885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */,
-				88170D2B17B004570059FE25 /* startButtonNormal.png */,
-				88170D2C17B004580059FE25 /* startButtonPressed.png */,
-				88170D2717AFFA750059FE25 /* startButtonNormal@2x.png */,
-				88170D2817AFFA760059FE25 /* startButtonPressed@2x.png */,
 				88170D2517AF76050059FE25 /* downArrow@2x.png */,
 				88170D2117AC9DEF0059FE25 /* DialShading.png */,
 				88170D2217AC9DEF0059FE25 /* DialBackground.png */,
@@ -255,9 +284,6 @@
 		88170CF917AB4B720059FE25 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				885B8BA317B414C8009284D2 /* TFCell.xib */,
-				885B8BA517B4150E009284D2 /* TFCell.h */,
-				885B8BA617B4150F009284D2 /* TFCell.m */,
 				88170CF317AB49690059FE25 /* TFBaseViewController.h */,
 				88170CF417AB49690059FE25 /* TFBaseViewController.m */,
 				88170CF617AB4B690059FE25 /* TFBaseTableViewController.h */,
@@ -294,8 +320,13 @@
 				88170CE817AB2E470059FE25 /* TFGenderTableViewController.m */,
 				88170CEA17AB2E620059FE25 /* TFGenderViewController.h */,
 				88170CEB17AB2E620059FE25 /* TFGenderViewController.m */,
+				885B8BAE17B46607009284D2 /* TFCell.h */,
+				885B8BAF17B46608009284D2 /* TFCell.m */,
+				885B8CCE17B56880009284D2 /* TFCell.xib */,
 				88170CD917AB1A4D0059FE25 /* TFViewController.h */,
 				88170CDA17AB1A4D0059FE25 /* TFViewController.m */,
+				885B8CE617B6C1F9009284D2 /* TFDisclaimerViewController.h */,
+				885B8CE717B6C1F9009284D2 /* TFDisclaimerViewController.m */,
 			);
 			name = Controler;
 			sourceTree = "<group>";
@@ -426,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88170CC917AB1A4D0059FE25 /* InfoPlist.strings in Resources */,
+				885B8BA917B43762009284D2 /* cellSeparatorDotted.png in Resources */,
 				88170CD117AB1A4D0059FE25 /* Default.png in Resources */,
 				88170CD317AB1A4D0059FE25 /* Default@2x.png in Resources */,
 				88170CD517AB1A4D0059FE25 /* Default-568h@2x.png in Resources */,
@@ -435,11 +467,6 @@
 				88170D1417AC7B4B0059FE25 /* startBackground.png in Resources */,
 				88170D2317AC9DEF0059FE25 /* DialShading.png in Resources */,
 				88170D2417AC9DEF0059FE25 /* DialBackground.png in Resources */,
-				88170D2617AF76060059FE25 /* downArrow@2x.png in Resources */,
-				88170D2917AFFA760059FE25 /* startButtonNormal@2x.png in Resources */,
-				88170D2A17AFFA760059FE25 /* startButtonPressed@2x.png in Resources */,
-				88170D2D17B004580059FE25 /* startButtonNormal.png in Resources */,
-				88170D2E17B004580059FE25 /* startButtonPressed.png in Resources */,
 				885B8AE617B00899009284D2 /* HelveticaRoundedLTStd-Black.otf in Resources */,
 				885B8AE717B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf in Resources */,
 				885B8AE817B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf in Resources */,
@@ -458,7 +485,19 @@
 				885B8B2B17B0C584009284D2 /* backgroundTileBlueDotted.png in Resources */,
 				885B8B2E17B2010E009284D2 /* downArrow.png in Resources */,
 				885B8B2F17B2010E009284D2 /* downArrow@2x.png in Resources */,
-				885B8BA417B414C9009284D2 /* TFCell.xib in Resources */,
+				885B8BAB17B4390E009284D2 /* cellSeparatorDotted2.png in Resources */,
+				885B8CCF17B56880009284D2 /* TFCell.xib in Resources */,
+				885B8CD117B6AD69009284D2 /* States.plist in Resources */,
+				885B8CD417B6BB52009284D2 /* buttonStart.png in Resources */,
+				885B8CD517B6BB52009284D2 /* buttonStart@2x.png in Resources */,
+				885B8CDB17B6BF19009284D2 /* buttonFairyBarButton.png in Resources */,
+				885B8CDC17B6BF19009284D2 /* buttonNext.png in Resources */,
+				885B8CDD17B6BF19009284D2 /* buttonNext@2x.png in Resources */,
+				885B8CDE17B6BF19009284D2 /* buttonShare.png in Resources */,
+				885B8CDF17B6BF19009284D2 /* buttonShare@2x.png in Resources */,
+				885B8CE317B6C070009284D2 /* disclaimerBackground-568@2x.png in Resources */,
+				885B8CE417B6C070009284D2 /* disclaimerBackground@2x.png in Resources */,
+				885B8CE517B6C070009284D2 /* disclaimerBackgroundpng.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +525,8 @@
 				88170D1F17AC9C820059FE25 /* TRSDialScrollView.m in Sources */,
 				88170D2017AC9C820059FE25 /* TRSDialView.m in Sources */,
 				885B8B2617B0B21B009284D2 /* StyledTableViewCell.m in Sources */,
-				885B8BA717B4150F009284D2 /* TFCell.m in Sources */,
+				885B8BB017B46608009284D2 /* TFCell.m in Sources */,
+				885B8CE817B6C1F9009284D2 /* TFDisclaimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TFGenderViewController : TFBaseViewController
+@interface TFGenderViewController : TFBaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *mainTitle;
+@property (strong, nonatomic) IBOutlet UITableView *table;
 
 @end

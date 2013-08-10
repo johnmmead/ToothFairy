@@ -15,4 +15,6 @@
 - (TFModel *)model;
 - (UIImageView *)checkmark;
 
+@property (strong, nonatomic) NSArray* selections;
+
 @end

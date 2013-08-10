@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TFCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
 @end
