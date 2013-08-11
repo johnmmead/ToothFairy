@@ -10,5 +10,6 @@
 #import "TFBaseTableViewController.h"
 
 @interface TFGenderTableViewController : TFBaseTableViewController
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

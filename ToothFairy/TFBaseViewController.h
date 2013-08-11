@@ -13,5 +13,8 @@
 
 - (TFModel *)model;
 - (BOOL)hasRetinaDisplay;
+- (UIImageView *)checkmark;
+
+@property (strong, nonatomic) NSArray* selections;
 
 @end

@@ -10,6 +10,8 @@
 
 @implementation TFCell
 
+@synthesize image, label, dots;
+
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder: aDecoder];
     if (self)

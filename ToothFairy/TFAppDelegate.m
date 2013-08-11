@@ -21,6 +21,8 @@
     model.age = [NSNumber numberWithInt: 40];
     model.income = [NSNumber numberWithInt: 50];
     
+    [self customizeAppearance];
+    
     // jmead font names
 //    for (NSString* family in [UIFont familyNames])
 //    {
@@ -31,8 +33,25 @@
 //            NSLog(@"  %@", name);
 //        }
 //    }
-//
+
     return YES;
+}
+
+- (void)customizeAppearance //jmead
+{
+    
+    // Customize the title text for *all* UINavigationBars
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+      UITextAttributeTextColor,
+      [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],
+      UITextAttributeTextShadowColor,
+      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
+      UITextAttributeTextShadowOffset,
+      [UIFont fontWithName:@"Baskerville-SemiBold" size:0.0],
+      UITextAttributeFont,
+      nil]];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

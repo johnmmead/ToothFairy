@@ -19,7 +19,6 @@
 		88170CD817AB1A4D0059FE25 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88170CD617AB1A4D0059FE25 /* MainStoryboard.storyboard */; };
 		88170CDB17AB1A4D0059FE25 /* TFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170CDA17AB1A4D0059FE25 /* TFViewController.m */; };
 		88170CE917AB2E470059FE25 /* TFGenderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170CE817AB2E470059FE25 /* TFGenderTableViewController.m */; };
-		88170CEC17AB2E620059FE25 /* TFGenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170CEB17AB2E620059FE25 /* TFGenderViewController.m */; };
 		88170CEE17AB35FD0059FE25 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170CED17AB35FD0059FE25 /* plane.png */; };
 		88170CF217AB44C50059FE25 /* TFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170CF117AB44C50059FE25 /* TFModel.m */; };
 		88170CF517AB49690059FE25 /* TFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170CF417AB49690059FE25 /* TFBaseViewController.m */; };
@@ -44,20 +43,15 @@
 		885B8B0A17B0195F009284D2 /* toofFairyLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */; };
 		885B8B0D17B01CA3009284D2 /* startViewBackgroundComposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0B17B01CA3009284D2 /* startViewBackgroundComposed.png */; };
 		885B8B0E17B01CA3009284D2 /* startViewBackgroundComposed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */; };
-		885B8B1117B02B04009284D2 /* genderViewBackgroundComposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B0F17B02B04009284D2 /* genderViewBackgroundComposed.png */; };
-		885B8B1217B02B04009284D2 /* genderViewBackgroundComposed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B1017B02B04009284D2 /* genderViewBackgroundComposed@2x.png */; };
 		885B8B1617B02E15009284D2 /* cellCheckmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B1417B02E15009284D2 /* cellCheckmark@2x.png */; };
 		885B8B1B17B04CA4009284D2 /* backgroundInterior.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B1817B04CA4009284D2 /* backgroundInterior.png */; };
 		885B8B1E17B04DF8009284D2 /* backgroundInterior-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B1D17B04DF8009284D2 /* backgroundInterior-568h@2x.png */; };
 		885B8B2017B04E5D009284D2 /* backgroundInterior@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B1F17B04E5D009284D2 /* backgroundInterior@2x.png */; };
 		885B8B2217B05B51009284D2 /* backgroundTileBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2117B05B51009284D2 /* backgroundTileBlue.png */; };
-		885B8B2617B0B21B009284D2 /* StyledTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8B2517B0B21B009284D2 /* StyledTableViewCell.m */; };
 		885B8B2917B0C042009284D2 /* dottedLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2817B0C042009284D2 /* dottedLine.png */; };
 		885B8B2B17B0C584009284D2 /* backgroundTileBlueDotted.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */; };
 		885B8B2E17B2010E009284D2 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2C17B2010E009284D2 /* downArrow.png */; };
 		885B8B2F17B2010E009284D2 /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B2D17B2010E009284D2 /* downArrow@2x.png */; };
-		885B8BA917B43762009284D2 /* cellSeparatorDotted.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8BA817B43762009284D2 /* cellSeparatorDotted.png */; };
-		885B8BAB17B4390E009284D2 /* cellSeparatorDotted2.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8BAA17B4390E009284D2 /* cellSeparatorDotted2.png */; };
 		885B8BB017B46608009284D2 /* TFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8BAF17B46608009284D2 /* TFCell.m */; };
 		885B8CCF17B56880009284D2 /* TFCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CCE17B56880009284D2 /* TFCell.xib */; };
 		885B8CD117B6AD69009284D2 /* States.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD017B6AD68009284D2 /* States.plist */; };
@@ -65,13 +59,24 @@
 		885B8CD517B6BB52009284D2 /* buttonStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD317B6BB52009284D2 /* buttonStart@2x.png */; };
 		885B8CDB17B6BF19009284D2 /* buttonFairyBarButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD617B6BF18009284D2 /* buttonFairyBarButton.png */; };
 		885B8CDC17B6BF19009284D2 /* buttonNext.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD717B6BF18009284D2 /* buttonNext.png */; };
-		885B8CDD17B6BF19009284D2 /* buttonNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD817B6BF19009284D2 /* buttonNext@2x.png */; };
 		885B8CDE17B6BF19009284D2 /* buttonShare.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CD917B6BF19009284D2 /* buttonShare.png */; };
 		885B8CDF17B6BF19009284D2 /* buttonShare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CDA17B6BF19009284D2 /* buttonShare@2x.png */; };
 		885B8CE317B6C070009284D2 /* disclaimerBackground-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */; };
 		885B8CE417B6C070009284D2 /* disclaimerBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE117B6C070009284D2 /* disclaimerBackground@2x.png */; };
 		885B8CE517B6C070009284D2 /* disclaimerBackgroundpng.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */; };
 		885B8CE817B6C1F9009284D2 /* TFDisclaimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8CE717B6C1F9009284D2 /* TFDisclaimerViewController.m */; };
+		885B8CEA17B6C663009284D2 /* buttonNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CE917B6C663009284D2 /* buttonNext@2x.png */; };
+		885B8CF417B6F728009284D2 /* TFGenderViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8CF317B6F727009284D2 /* TFGenderViewController2.m */; };
+		885B8CFB17B70C80009284D2 /* cellBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CF517B70C7F009284D2 /* cellBackground.png */; };
+		885B8CFC17B70C80009284D2 /* cellBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8CF617B70C7F009284D2 /* cellBackground@2x.png */; };
+		885B8D0517B70CFF009284D2 /* tableBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D0117B70CFE009284D2 /* tableBottom.png */; };
+		885B8D0617B70CFF009284D2 /* tableBottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D0217B70CFF009284D2 /* tableBottom@2x.png */; };
+		885B8D0717B70CFF009284D2 /* tableTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D0317B70CFF009284D2 /* tableTop.png */; };
+		885B8D0817B70CFF009284D2 /* tableTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D0417B70CFF009284D2 /* tableTop@2x.png */; };
+		885B8D1017B71BBC009284D2 /* cellDots.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D0E17B71BBB009284D2 /* cellDots.png */; };
+		885B8D1117B71BBC009284D2 /* cellDots@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D0F17B71BBC009284D2 /* cellDots@2x.png */; };
+		885B8D1417B74670009284D2 /* step1Of7.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D1217B7466F009284D2 /* step1Of7.png */; };
+		885B8D1517B74670009284D2 /* step1Of7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D1317B7466F009284D2 /* step1Of7@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,8 +98,6 @@
 		88170CDA17AB1A4D0059FE25 /* TFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFViewController.m; sourceTree = "<group>"; };
 		88170CE717AB2E470059FE25 /* TFGenderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFGenderTableViewController.h; sourceTree = "<group>"; };
 		88170CE817AB2E470059FE25 /* TFGenderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGenderTableViewController.m; sourceTree = "<group>"; };
-		88170CEA17AB2E620059FE25 /* TFGenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFGenderViewController.h; sourceTree = "<group>"; };
-		88170CEB17AB2E620059FE25 /* TFGenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGenderViewController.m; sourceTree = "<group>"; };
 		88170CED17AB35FD0059FE25 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
 		88170CF017AB44C50059FE25 /* TFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFModel.h; sourceTree = "<group>"; };
 		88170CF117AB44C50059FE25 /* TFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFModel.m; sourceTree = "<group>"; };
@@ -131,22 +134,16 @@
 		885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toofFairyLogo@2x.png"; sourceTree = "<group>"; };
 		885B8B0B17B01CA3009284D2 /* startViewBackgroundComposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startViewBackgroundComposed.png; sourceTree = "<group>"; };
 		885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startViewBackgroundComposed@2x.png"; sourceTree = "<group>"; };
-		885B8B0F17B02B04009284D2 /* genderViewBackgroundComposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = genderViewBackgroundComposed.png; sourceTree = "<group>"; };
-		885B8B1017B02B04009284D2 /* genderViewBackgroundComposed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "genderViewBackgroundComposed@2x.png"; sourceTree = "<group>"; };
 		885B8B1317B02E15009284D2 /* cellCheckmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellCheckmark.png; sourceTree = "<group>"; };
 		885B8B1417B02E15009284D2 /* cellCheckmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellCheckmark@2x.png"; sourceTree = "<group>"; };
 		885B8B1817B04CA4009284D2 /* backgroundInterior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundInterior.png; sourceTree = "<group>"; };
 		885B8B1D17B04DF8009284D2 /* backgroundInterior-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundInterior-568h@2x.png"; sourceTree = "<group>"; };
 		885B8B1F17B04E5D009284D2 /* backgroundInterior@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundInterior@2x.png"; sourceTree = "<group>"; };
 		885B8B2117B05B51009284D2 /* backgroundTileBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundTileBlue.png; sourceTree = "<group>"; };
-		885B8B2417B0B21B009284D2 /* StyledTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledTableViewCell.h; sourceTree = "<group>"; };
-		885B8B2517B0B21B009284D2 /* StyledTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledTableViewCell.m; sourceTree = "<group>"; };
 		885B8B2817B0C042009284D2 /* dottedLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dottedLine.png; sourceTree = "<group>"; };
 		885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundTileBlueDotted.png; sourceTree = "<group>"; };
 		885B8B2C17B2010E009284D2 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
 		885B8B2D17B2010E009284D2 /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@2x.png"; sourceTree = "<group>"; };
-		885B8BA817B43762009284D2 /* cellSeparatorDotted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellSeparatorDotted.png; sourceTree = "<group>"; };
-		885B8BAA17B4390E009284D2 /* cellSeparatorDotted2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellSeparatorDotted2.png; sourceTree = "<group>"; };
 		885B8BAE17B46607009284D2 /* TFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCell.h; path = ../TFCell.h; sourceTree = "<group>"; };
 		885B8BAF17B46608009284D2 /* TFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFCell.m; path = ../TFCell.m; sourceTree = "<group>"; };
 		885B8CCE17B56880009284D2 /* TFCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFCell.xib; sourceTree = "<group>"; };
@@ -155,7 +152,6 @@
 		885B8CD317B6BB52009284D2 /* buttonStart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonStart@2x.png"; sourceTree = "<group>"; };
 		885B8CD617B6BF18009284D2 /* buttonFairyBarButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonFairyBarButton.png; sourceTree = "<group>"; };
 		885B8CD717B6BF18009284D2 /* buttonNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonNext.png; sourceTree = "<group>"; };
-		885B8CD817B6BF19009284D2 /* buttonNext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonNext@2x.png"; sourceTree = "<group>"; };
 		885B8CD917B6BF19009284D2 /* buttonShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonShare.png; sourceTree = "<group>"; };
 		885B8CDA17B6BF19009284D2 /* buttonShare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonShare@2x.png"; sourceTree = "<group>"; };
 		885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disclaimerBackground-568@2x.png"; sourceTree = "<group>"; };
@@ -163,6 +159,19 @@
 		885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclaimerBackgroundpng.png; sourceTree = "<group>"; };
 		885B8CE617B6C1F9009284D2 /* TFDisclaimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDisclaimerViewController.h; sourceTree = "<group>"; };
 		885B8CE717B6C1F9009284D2 /* TFDisclaimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDisclaimerViewController.m; sourceTree = "<group>"; };
+		885B8CE917B6C663009284D2 /* buttonNext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonNext@2x.png"; sourceTree = "<group>"; };
+		885B8CF217B6F727009284D2 /* TFGenderViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFGenderViewController2.h; sourceTree = "<group>"; };
+		885B8CF317B6F727009284D2 /* TFGenderViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGenderViewController2.m; sourceTree = "<group>"; };
+		885B8CF517B70C7F009284D2 /* cellBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBackground.png; sourceTree = "<group>"; };
+		885B8CF617B70C7F009284D2 /* cellBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellBackground@2x.png"; sourceTree = "<group>"; };
+		885B8D0117B70CFE009284D2 /* tableBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableBottom.png; sourceTree = "<group>"; };
+		885B8D0217B70CFF009284D2 /* tableBottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableBottom@2x.png"; sourceTree = "<group>"; };
+		885B8D0317B70CFF009284D2 /* tableTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableTop.png; sourceTree = "<group>"; };
+		885B8D0417B70CFF009284D2 /* tableTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableTop@2x.png"; sourceTree = "<group>"; };
+		885B8D0E17B71BBB009284D2 /* cellDots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellDots.png; sourceTree = "<group>"; };
+		885B8D0F17B71BBC009284D2 /* cellDots@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellDots@2x.png"; sourceTree = "<group>"; };
+		885B8D1217B7466F009284D2 /* step1Of7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1Of7.png; sourceTree = "<group>"; };
+		885B8D1317B7466F009284D2 /* step1Of7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step1Of7@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,8 +222,8 @@
 			children = (
 				88170CCD17AB1A4D0059FE25 /* TFAppDelegate.h */,
 				88170CCE17AB1A4D0059FE25 /* TFAppDelegate.m */,
-				88170CF917AB4B720059FE25 /* Base */,
 				88170CD617AB1A4D0059FE25 /* MainStoryboard.storyboard */,
+				88170CF917AB4B720059FE25 /* Base */,
 				88170CFB17AB4B990059FE25 /* Controler */,
 				885B8B2717B0B245009284D2 /* Third Party */,
 				88170CFA17AB4B820059FE25 /* Model */,
@@ -243,40 +252,46 @@
 		88170CEF17AB36020059FE25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */,
-				885B8CE117B6C070009284D2 /* disclaimerBackground@2x.png */,
-				885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */,
+				885B8D1217B7466F009284D2 /* step1Of7.png */,
+				885B8D1317B7466F009284D2 /* step1Of7@2x.png */,
+				885B8D0E17B71BBB009284D2 /* cellDots.png */,
+				885B8D0F17B71BBC009284D2 /* cellDots@2x.png */,
+				885B8B1D17B04DF8009284D2 /* backgroundInterior-568h@2x.png */,
+				885B8B1817B04CA4009284D2 /* backgroundInterior.png */,
+				885B8B1F17B04E5D009284D2 /* backgroundInterior@2x.png */,
+				885B8B2117B05B51009284D2 /* backgroundTileBlue.png */,
+				885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */,
 				885B8CD617B6BF18009284D2 /* buttonFairyBarButton.png */,
 				885B8CD717B6BF18009284D2 /* buttonNext.png */,
-				885B8CD817B6BF19009284D2 /* buttonNext@2x.png */,
+				885B8CE917B6C663009284D2 /* buttonNext@2x.png */,
 				885B8CD917B6BF19009284D2 /* buttonShare.png */,
 				885B8CDA17B6BF19009284D2 /* buttonShare@2x.png */,
 				885B8CD217B6BB52009284D2 /* buttonStart.png */,
 				885B8CD317B6BB52009284D2 /* buttonStart@2x.png */,
-				885B8BAA17B4390E009284D2 /* cellSeparatorDotted2.png */,
-				885B8BA817B43762009284D2 /* cellSeparatorDotted.png */,
-				885B8B2C17B2010E009284D2 /* downArrow.png */,
-				885B8B2D17B2010E009284D2 /* downArrow@2x.png */,
-				885B8B2A17B0C584009284D2 /* backgroundTileBlueDotted.png */,
-				885B8B2817B0C042009284D2 /* dottedLine.png */,
-				885B8B2117B05B51009284D2 /* backgroundTileBlue.png */,
-				885B8B1F17B04E5D009284D2 /* backgroundInterior@2x.png */,
-				885B8B1D17B04DF8009284D2 /* backgroundInterior-568h@2x.png */,
-				885B8B1817B04CA4009284D2 /* backgroundInterior.png */,
+				885B8CF517B70C7F009284D2 /* cellBackground.png */,
+				885B8CF617B70C7F009284D2 /* cellBackground@2x.png */,
 				885B8B1317B02E15009284D2 /* cellCheckmark.png */,
 				885B8B1417B02E15009284D2 /* cellCheckmark@2x.png */,
+				88170D2217AC9DEF0059FE25 /* DialBackground.png */,
+				88170D2117AC9DEF0059FE25 /* DialShading.png */,
+				885B8CE017B6C070009284D2 /* disclaimerBackground-568@2x.png */,
+				885B8CE117B6C070009284D2 /* disclaimerBackground@2x.png */,
+				885B8CE217B6C070009284D2 /* disclaimerBackgroundpng.png */,
+				885B8B2817B0C042009284D2 /* dottedLine.png */,
+				885B8B2C17B2010E009284D2 /* downArrow.png */,
+				885B8B2D17B2010E009284D2 /* downArrow@2x.png */,
+				88170CED17AB35FD0059FE25 /* plane.png */,
+				88170D1317AC7B4B0059FE25 /* startBackground.png */,
 				885B8B0B17B01CA3009284D2 /* startViewBackgroundComposed.png */,
-				885B8B0F17B02B04009284D2 /* genderViewBackgroundComposed.png */,
-				885B8B1017B02B04009284D2 /* genderViewBackgroundComposed@2x.png */,
 				885B8B0C17B01CA3009284D2 /* startViewBackgroundComposed@2x.png */,
+				885B8D0117B70CFE009284D2 /* tableBottom.png */,
+				885B8D0217B70CFF009284D2 /* tableBottom@2x.png */,
+				885B8D0317B70CFF009284D2 /* tableTop.png */,
+				885B8D0417B70CFF009284D2 /* tableTop@2x.png */,
 				885B8B0717B0195F009284D2 /* toofFairyLogo.png */,
 				885B8B0817B0195F009284D2 /* toofFairyLogo@2x.png */,
 				88170D2517AF76050059FE25 /* downArrow@2x.png */,
-				88170D2117AC9DEF0059FE25 /* DialShading.png */,
-				88170D2217AC9DEF0059FE25 /* DialBackground.png */,
-				88170D1317AC7B4B0059FE25 /* startBackground.png */,
 				88170CFF17AC33CD0059FE25 /* cellCheckmark.png */,
-				88170CED17AB35FD0059FE25 /* plane.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -318,8 +333,8 @@
 				88170D1117AC69650059FE25 /* TFIncomeViewController.m */,
 				88170CE717AB2E470059FE25 /* TFGenderTableViewController.h */,
 				88170CE817AB2E470059FE25 /* TFGenderTableViewController.m */,
-				88170CEA17AB2E620059FE25 /* TFGenderViewController.h */,
-				88170CEB17AB2E620059FE25 /* TFGenderViewController.m */,
+				885B8CF217B6F727009284D2 /* TFGenderViewController2.h */,
+				885B8CF317B6F727009284D2 /* TFGenderViewController2.m */,
 				885B8BAE17B46607009284D2 /* TFCell.h */,
 				885B8BAF17B46608009284D2 /* TFCell.m */,
 				885B8CCE17B56880009284D2 /* TFCell.xib */,
@@ -385,20 +400,9 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		885B8B2317B0B21B009284D2 /* StyledTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				885B8B2417B0B21B009284D2 /* StyledTableViewCell.h */,
-				885B8B2517B0B21B009284D2 /* StyledTableViewCell.m */,
-			);
-			name = StyledTableViewCell;
-			path = ../StyledTableViewCell;
-			sourceTree = "<group>";
-		};
 		885B8B2717B0B245009284D2 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				885B8B2317B0B21B009284D2 /* StyledTableViewCell */,
 				88170D1A17AC9C820059FE25 /* TRSDialScrollView */,
 			);
 			name = "Third Party";
@@ -457,7 +461,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88170CC917AB1A4D0059FE25 /* InfoPlist.strings in Resources */,
-				885B8BA917B43762009284D2 /* cellSeparatorDotted.png in Resources */,
 				88170CD117AB1A4D0059FE25 /* Default.png in Resources */,
 				88170CD317AB1A4D0059FE25 /* Default@2x.png in Resources */,
 				88170CD517AB1A4D0059FE25 /* Default-568h@2x.png in Resources */,
@@ -474,8 +477,6 @@
 				885B8B0A17B0195F009284D2 /* toofFairyLogo@2x.png in Resources */,
 				885B8B0D17B01CA3009284D2 /* startViewBackgroundComposed.png in Resources */,
 				885B8B0E17B01CA3009284D2 /* startViewBackgroundComposed@2x.png in Resources */,
-				885B8B1117B02B04009284D2 /* genderViewBackgroundComposed.png in Resources */,
-				885B8B1217B02B04009284D2 /* genderViewBackgroundComposed@2x.png in Resources */,
 				885B8B1617B02E15009284D2 /* cellCheckmark@2x.png in Resources */,
 				885B8B1B17B04CA4009284D2 /* backgroundInterior.png in Resources */,
 				885B8B1E17B04DF8009284D2 /* backgroundInterior-568h@2x.png in Resources */,
@@ -485,19 +486,28 @@
 				885B8B2B17B0C584009284D2 /* backgroundTileBlueDotted.png in Resources */,
 				885B8B2E17B2010E009284D2 /* downArrow.png in Resources */,
 				885B8B2F17B2010E009284D2 /* downArrow@2x.png in Resources */,
-				885B8BAB17B4390E009284D2 /* cellSeparatorDotted2.png in Resources */,
 				885B8CCF17B56880009284D2 /* TFCell.xib in Resources */,
 				885B8CD117B6AD69009284D2 /* States.plist in Resources */,
 				885B8CD417B6BB52009284D2 /* buttonStart.png in Resources */,
 				885B8CD517B6BB52009284D2 /* buttonStart@2x.png in Resources */,
 				885B8CDB17B6BF19009284D2 /* buttonFairyBarButton.png in Resources */,
 				885B8CDC17B6BF19009284D2 /* buttonNext.png in Resources */,
-				885B8CDD17B6BF19009284D2 /* buttonNext@2x.png in Resources */,
 				885B8CDE17B6BF19009284D2 /* buttonShare.png in Resources */,
 				885B8CDF17B6BF19009284D2 /* buttonShare@2x.png in Resources */,
 				885B8CE317B6C070009284D2 /* disclaimerBackground-568@2x.png in Resources */,
 				885B8CE417B6C070009284D2 /* disclaimerBackground@2x.png in Resources */,
 				885B8CE517B6C070009284D2 /* disclaimerBackgroundpng.png in Resources */,
+				885B8CEA17B6C663009284D2 /* buttonNext@2x.png in Resources */,
+				885B8CFB17B70C80009284D2 /* cellBackground.png in Resources */,
+				885B8CFC17B70C80009284D2 /* cellBackground@2x.png in Resources */,
+				885B8D0517B70CFF009284D2 /* tableBottom.png in Resources */,
+				885B8D0617B70CFF009284D2 /* tableBottom@2x.png in Resources */,
+				885B8D0717B70CFF009284D2 /* tableTop.png in Resources */,
+				885B8D0817B70CFF009284D2 /* tableTop@2x.png in Resources */,
+				885B8D1017B71BBC009284D2 /* cellDots.png in Resources */,
+				885B8D1117B71BBC009284D2 /* cellDots@2x.png in Resources */,
+				885B8D1417B74670009284D2 /* step1Of7.png in Resources */,
+				885B8D1517B74670009284D2 /* step1Of7@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +522,6 @@
 				88170CCF17AB1A4D0059FE25 /* TFAppDelegate.m in Sources */,
 				88170CDB17AB1A4D0059FE25 /* TFViewController.m in Sources */,
 				88170CE917AB2E470059FE25 /* TFGenderTableViewController.m in Sources */,
-				88170CEC17AB2E620059FE25 /* TFGenderViewController.m in Sources */,
 				88170CF217AB44C50059FE25 /* TFModel.m in Sources */,
 				88170CF517AB49690059FE25 /* TFBaseViewController.m in Sources */,
 				88170CF817AB4B690059FE25 /* TFBaseTableViewController.m in Sources */,
@@ -524,9 +533,9 @@
 				88170D1717AC7FCE0059FE25 /* TFStartViewController.m in Sources */,
 				88170D1F17AC9C820059FE25 /* TRSDialScrollView.m in Sources */,
 				88170D2017AC9C820059FE25 /* TRSDialView.m in Sources */,
-				885B8B2617B0B21B009284D2 /* StyledTableViewCell.m in Sources */,
 				885B8BB017B46608009284D2 /* TFCell.m in Sources */,
 				885B8CE817B6C1F9009284D2 /* TFDisclaimerViewController.m in Sources */,
+				885B8CF417B6F728009284D2 /* TFGenderViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

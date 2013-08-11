@@ -36,7 +36,6 @@
     // table set up
 //    [self.tableView registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:[TFConstants kCellIdentifier]];
 
-    self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.rowHeight = 60.0;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 //    self.tableView.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"cellSeparatorDotted2"]];
