@@ -1,18 +1,18 @@
 //
-//  TFIncomeViewController.m
+//  TFFinalViewController.m
 //  ToothFairy
 //
-//  Created by John Mead on 8/2/13.
+//  Created by John Mead on 8/11/13.
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFIncomeViewController.h"
+#import "TFFinalViewController.h"
 
-@interface TFIncomeViewController ()
+@interface TFFinalViewController ()
 
 @end
 
-@implementation TFIncomeViewController
+@implementation TFFinalViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // Don't want to see the navigation bar from here on
+    self.navigationController.navigationBar.hidden = YES;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +38,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

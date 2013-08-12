@@ -1,29 +1,38 @@
 //
-//  TFEducationViewController.m
+//  TFFamilyViewController.m
 //  ToothFairy
 //
-//  Created by John Mead on 8/2/13.
+//  Created by John Mead on 8/11/13.
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFEducationViewController.h"
-#import "TFCell.h"
+#import "TFFamilyViewController.h"
 
-@interface TFEducationViewController ()
+@interface TFFamilyViewController ()
 
 @end
 
-@implementation TFEducationViewController
+@implementation TFFamilyViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     // setting model data
-    self.selections = @[@"High School", @"College", @"Graduate School"];
+    self.selections = @[@"2", @"3", @"4", @"5", @"6", @"7+"];
     
     // title
-    self.mainTitle.text = @"What is your\nhighest level\nof education?";
+    self.mainTitle.text = @"How big is your\nimmediate family?";
     
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
@@ -36,11 +45,11 @@
     [self.table reloadData];
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -60,8 +69,10 @@
     cell = [super decorateCell:cell forIndex:indexPath.row];
     
     // align visual state with model
-    if([[self model].education isEqualToString:cell.label.text])
+    if([self model].familySize == [cell.label.text integerValue]){
         cell.image.hidden = NO;
+        [self.table scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+    }
     
     return cell;
 }
@@ -69,7 +80,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [TFBaseViewController nukSound];
-
+    
     // set table view slection
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
     cell.image.hidden = NO;
@@ -77,10 +88,16 @@
     
     // align model to state of selection in control
     NSString *selection = [self.selections objectAtIndex:indexPath.row];
-    [self model].education = selection;
+    
+    // corner case of 7+
+    if ([selection isEqualToString:@"7+"])
+        selection = @"7";
+    
+    // set model
+    [self model].familySize = [selection integerValue];
     
     // perform segue
-    [self.parentViewController performSegueWithIdentifier:@"maritalStatusViewController" sender:self];
+    [self.parentViewController performSegueWithIdentifier:@"incomeViewController" sender:self];
 }
 
 

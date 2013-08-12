@@ -1,21 +1,19 @@
 //
-//  TFGenderViewController.m
+//  TFStateViewController.m
 //  ToothFairy
 //
-//  Created by John Mead on 8/1/13.
+//  Created by John Mead on 8/11/13.
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFGenderViewController2.h"
+#import "TFStateViewController.h"
 #import "TFCell.h"
 
-@interface TFGenderViewController2 ()
+@interface TFStateViewController ()
 
 @end
 
-@implementation TFGenderViewController2{
-    NSArray *things;
-}
+@implementation TFStateViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,16 +28,16 @@
 {
     [super viewDidLoad];
     
+    // setting model data    
+    self.selections = @[@"Arizona",@"Arkansas",@"California",@"Colorado",@"Connecticut",@"Delaware",@"District of Columbia",@"Florida",@"Georgia",@"Guam",@"Hawaii",@"Idaho",@"Illinois",@"Indiana",@"Iowa",@"Kansas",@"Kentucky",@"Louisiana",@"Maine",@"Maryland",@"Massachusetts",@"Michigan",@"Minnesota",@"Mississippi",@"Missouri",@"Montana",@"Nebraska",@"Nevada",@"New Hampshire",@"New Jersey",@"New Mexico",@"New York",@"North Carolina",@"North Dakota",@"Northern Mariana Islands",@"Ohio",@"Oklahoma",@"Oregon",@"Pennsylvania",@"Puerto Rico",@"Rhode Island",@"South Carolina",@"South Dakota",@"Tennessee",@"Texas",@"U.S. Virgin Islands",@"Utah",@"Vermont",@"Virginia",@"Washington",@"West Virginia",@"Wisconsin",@"Wyoming"];
+    
+    // title
+    self.mainTitle.text = @"Which state\ndo you live in?";
+    
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
-    self.table.delegate = self;
-    self.table.dataSource = self;
-    self.table.rowHeight = 39;
-    self.table.backgroundColor = [UIColor clearColor];
-    self.table.separatorStyle = UITableViewCellSelectionStyleNone;
+    self.table = [super configureTable:self.table forController:self];
     
-    // setting model data
-    self.selections = @[@"Male", @"Female"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -56,7 +54,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
@@ -69,43 +66,33 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
-
-    // if this is the first cell there is no border
-    if(indexPath.row == 0){
-        cell.dots.hidden = YES;
-    } else {
-        cell.dots.hidden = NO;
-    }
+    cell = [super decorateCell:cell forIndex:indexPath.row];
     
-    // align the view checkmark with the model
-    if([self.model.gender isEqualToString:[self.selections objectAtIndex:indexPath.row]]){
+    // align visual state with model
+    if([[self model].state isEqualToString:cell.label.text])
+    {
         cell.image.hidden = NO;
-    } else {
-        cell.image.hidden = YES;
+        [self.table scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
     }
-    
-    cell.label.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:21.0f];
-    cell.label.text = [self.selections objectAtIndex:indexPath.row];
-    cell.label.textColor = [UIColor whiteColor];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  //  [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    [TFBaseViewController nukSound];
     
     // set table view slection
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
-    cell.image.alpha = 1.0;
+    cell.image.hidden = NO;
+    [self.table reloadData];    
     
     // align model to state of selection in control
     NSString *selection = [self.selections objectAtIndex:indexPath.row];
-    [self model].gender = selection;
+    [self model].state = selection;
     
     // perform segue
     [self.parentViewController performSegueWithIdentifier:@"educationViewController" sender:self];
-    
 }
 
 

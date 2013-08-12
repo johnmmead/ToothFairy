@@ -27,12 +27,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // clear the model- could be returnin from last view controller
+    [super clearModel];
 
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning

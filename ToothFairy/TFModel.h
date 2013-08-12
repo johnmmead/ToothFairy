@@ -11,8 +11,11 @@
 @interface TFModel : NSObject
 
 @property (strong, nonatomic) NSString *gender;
+@property (strong, nonatomic) NSString *state;
 @property (strong, nonatomic) NSString *education;
-@property (strong, nonatomic) NSNumber *age;
-@property (strong, nonatomic) NSNumber *income;
+@property (strong, nonatomic) NSString *maritalStatus;
+@property (assign, nonatomic) NSInteger familySize;
+@property (assign, nonatomic) NSInteger age;
+@property (assign, nonatomic) NSInteger income;
 
 @end

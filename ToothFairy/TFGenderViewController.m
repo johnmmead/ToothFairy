@@ -1,29 +1,38 @@
 //
-//  TFEducationViewController.m
+//  TFGenderViewController.m
 //  ToothFairy
 //
-//  Created by John Mead on 8/2/13.
+//  Created by John Mead on 8/1/13.
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFEducationViewController.h"
+#import "TFGenderViewController.h"
 #import "TFCell.h"
 
-@interface TFEducationViewController ()
+@interface TFGenderViewController ()
 
 @end
 
-@implementation TFEducationViewController
+@implementation TFGenderViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     // setting model data
-    self.selections = @[@"High School", @"College", @"Graduate School"];
-    
+    self.selections = @[@"Male", @"Female"];
+
     // title
-    self.mainTitle.text = @"What is your\nhighest level\nof education?";
+    self.mainTitle.text = @"What is\nyour gender?";
     
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
@@ -55,12 +64,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+{    
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
     cell = [super decorateCell:cell forIndex:indexPath.row];
-    
+
     // align visual state with model
-    if([[self model].education isEqualToString:cell.label.text])
+    if([[self model].gender isEqualToString:cell.label.text])
         cell.image.hidden = NO;
     
     return cell;
@@ -69,7 +78,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [TFBaseViewController nukSound];
-
+    
     // set table view slection
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
     cell.image.hidden = NO;
@@ -77,10 +86,10 @@
     
     // align model to state of selection in control
     NSString *selection = [self.selections objectAtIndex:indexPath.row];
-    [self model].education = selection;
+    [self model].gender = selection;
     
     // perform segue
-    [self.parentViewController performSegueWithIdentifier:@"maritalStatusViewController" sender:self];
+    [self.parentViewController performSegueWithIdentifier:@"ageViewController" sender:self];
 }
 
 

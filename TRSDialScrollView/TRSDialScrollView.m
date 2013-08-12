@@ -9,6 +9,7 @@
 
 #import "TRSDialView.h"
 #import "TRSDialScrollView.h"
+#import "TFBaseViewController.h"
 
 @interface TRSDialScrollView () <UIScrollViewDelegate> {
     
@@ -148,6 +149,17 @@
                              targetContentOffset:targetContentOffset];
 }
 
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int offset = (int)scrollView.contentOffset.x;
+    int dist = (int)self.minorTickDistance;
+    
+    if ((offset % dist) == 0)
+    {
+        [TFBaseViewController nukSound];
+    }
+}
 
 #pragma mark - Properties
 
@@ -336,7 +348,7 @@
     offset.x = (newValue - self.dialView.minimum) * self.dialView.minorTickDistance;
     
     self.scrollView.contentOffset = offset;
-}
+    }
 
 - (NSInteger)currentValue
 {

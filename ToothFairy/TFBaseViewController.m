@@ -6,19 +6,22 @@
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import "TFBaseViewController.h"
 #import "TFAppDelegate.h"
-#import <QuartzCore/QuartzCore.h>
+#import "TFCell.h"
 
 @interface TFBaseViewController ()
-
 @end
+
+static SystemSoundID _nuk;
+static SystemSoundID _ping;
+static SystemSoundID _schwit;
 
 @implementation TFBaseViewController{
     UIImageView *_tfCheckmark;
 }
-
-@synthesize selections;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,6 +54,16 @@
 	return [(TFAppDelegate *)[[UIApplication sharedApplication] delegate] model];
 }
 
+- (void)clearModel{
+    [self model].age = 40;
+    [self model].education = nil;
+    [self model].familySize = 2;
+    [self model].gender = nil;
+    [self model].income = 60;
+    [self model].state = nil;
+    [self model].maritalStatus = nil;
+}
+
 - (BOOL)hasRetinaDisplay
 {
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2)
@@ -66,5 +79,68 @@
     
     return _tfCheckmark;
 }
+
+// table view common stuff
+- (TFCell *)decorateCell:(TFCell *)cell forIndex:(int)index {
+    
+    // if this is the first cell there is no border
+    if(index == 0){
+        cell.dots.hidden = YES;
+    } else {
+        cell.dots.hidden = NO;
+    }
+    
+    // align the view checkmark with the model
+    if([self.model.gender isEqualToString:[self.selections objectAtIndex:index]]){
+        cell.image.hidden = NO;
+    } else {
+        cell.image.hidden = YES;
+    }
+    
+    cell.label.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:21.0f];
+    cell.label.text = [self.selections objectAtIndex:index];
+    cell.label.textColor = [UIColor whiteColor];
+
+    return cell;
+}
+
+- (UITableView *)configureTable:(UITableView *)table forController:(id)controller{
+    table.delegate = controller;
+    table.dataSource = controller;
+    table.rowHeight = 39;
+    table.backgroundColor = [UIColor clearColor];
+    table.separatorStyle = UITableViewCellSeparatorStyleNone;
+    table.bounces = NO;
+    return table;
+}
+
++ (void)nukSound
+{
+    if(!_nuk){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"nuk" ofType:@"aiff"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_nuk);
+    }
+    AudioServicesPlaySystemSound(_nuk);
+}
+
++ (void)pingSound
+{
+    if(!_ping){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ping" ofType:@"aiff"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_ping);
+    }
+    AudioServicesPlaySystemSound(_ping);
+}
+
+
++ (void)schwitSound
+{
+    if(!_schwit){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"schwit" ofType:@"aiff"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_schwit);
+    }
+    AudioServicesPlaySystemSound(_schwit);
+}
+
 
 @end

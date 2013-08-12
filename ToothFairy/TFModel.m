@@ -10,6 +10,6 @@
 
 @implementation TFModel
 
-@synthesize gender, age, income, education;
+@synthesize gender, age, income, education, state, maritalStatus, familySize;
 
 @end

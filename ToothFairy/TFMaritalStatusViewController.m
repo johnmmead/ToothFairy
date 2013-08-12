@@ -1,33 +1,34 @@
 //
-//  TFEducationViewController.m
+//  TFMaritalStatusViewController.m
 //  ToothFairy
 //
-//  Created by John Mead on 8/2/13.
+//  Created by John Mead on 8/11/13.
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFEducationViewController.h"
+#import "TFMaritalStatusViewController.h"
 #import "TFCell.h"
 
-@interface TFEducationViewController ()
+@interface TFMaritalStatusViewController ()
 
 @end
 
-@implementation TFEducationViewController
+@implementation TFMaritalStatusViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     // setting model data
-    self.selections = @[@"High School", @"College", @"Graduate School"];
+    self.selections = @[@"Married", @"Not married"];
     
     // title
-    self.mainTitle.text = @"What is your\nhighest level\nof education?";
+    self.mainTitle.text = @"What is your\nmarital status?";
     
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
     self.table = [super configureTable:self.table forController:self];
+
     
 }
 
@@ -60,7 +61,7 @@
     cell = [super decorateCell:cell forIndex:indexPath.row];
     
     // align visual state with model
-    if([[self model].education isEqualToString:cell.label.text])
+    if([[self model].maritalStatus isEqualToString:cell.label.text])
         cell.image.hidden = NO;
     
     return cell;
@@ -69,7 +70,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [TFBaseViewController nukSound];
-
+    
     // set table view slection
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
     cell.image.hidden = NO;
@@ -77,10 +78,10 @@
     
     // align model to state of selection in control
     NSString *selection = [self.selections objectAtIndex:indexPath.row];
-    [self model].education = selection;
+    [self model].maritalStatus = selection;
     
     // perform segue
-    [self.parentViewController performSegueWithIdentifier:@"maritalStatusViewController" sender:self];
+    [self.parentViewController performSegueWithIdentifier:@"familyViewController" sender:self];
 }
 
 

@@ -18,8 +18,8 @@
     model = [[TFModel alloc]init];
     
     // set some model defaults
-    model.age = [NSNumber numberWithInt: 40];
-    model.income = [NSNumber numberWithInt: 50];
+    model.age = 40;
+    model.income = 60;
     
     [self customizeAppearance];
     

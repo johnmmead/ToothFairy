@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TFCell.m"
-         timestampString = "397888877.943139"
+         timestampString = "397946391.71291"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "46"
-         endingLineNumber = "46"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "-initWithStyle:reuseIdentifier:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,26 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ToothFairy/TFGenderViewController.m"
-         timestampString = "397865157.668334"
+         timestampString = "397970566.499904"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "90"
-         endingLineNumber = "90"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ToothFairy/TFGenderViewController.m"
-         timestampString = "397863566.516202"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "24"
-         endingLineNumber = "24"
-         landmarkName = "-initWithNibName:bundle:"
-         landmarkType = "5">
+         startingLineNumber = "149"
+         endingLineNumber = "149">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"

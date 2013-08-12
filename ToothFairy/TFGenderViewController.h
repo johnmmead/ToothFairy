@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TFBaseTableViewController.h"
+#import "TFBaseViewController.h"
 
-@interface TFGenderViewController2 : TFBaseViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TFGenderViewController : TFBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *table;
 @property (strong, nonatomic) IBOutlet UILabel *mainTitle;

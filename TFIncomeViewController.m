@@ -1,29 +1,31 @@
 //
-//  TFAgeViewController.m
+//  TFIncomeViewController.m
 //  ToothFairy
 //
-//  Created by John Mead on 8/2/13.
+//  Created by John Mead on 8/11/13.
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFAgeViewController.h"
+#import "TFIncomeViewController.h"
 #import "TRSDialScrollView.h"
 
-@interface TFAgeViewController ()  <UIScrollViewDelegate>
+@interface TFIncomeViewController ()<UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet TRSDialScrollView *dialView;
 
+
 @end
 
-@implementation TFAgeViewController
+@implementation TFIncomeViewController
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.mainTitle.text = @"What is\nyour age?";
-    self.age.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:45.0f];
-
+    self.mainTitle.text = @"What is your\nannual income?";
+    self.income.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:45.0f];
+    
     
     [[TRSDialScrollView appearance] setMinorTicksPerMajorTick:10];
     [[TRSDialScrollView appearance] setMinorTickDistance:16];
@@ -33,11 +35,11 @@
     [[TRSDialScrollView appearance] setLabelStrokeColor:[UIColor colorWithRed:0.400 green:0.525 blue:0.643 alpha:1.000]];
     [[TRSDialScrollView appearance] setLabelStrokeWidth:0.1f];
     [[TRSDialScrollView appearance] setLabelFillColor:[UIColor whiteColor]];
-
+    
     [[TRSDialScrollView appearance] setLabelFont:[UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:32.0f]];
     
     
-
+    
     [[TRSDialScrollView appearance] setMinorTickColor:[TFConstants kTickmarkColor]];
     [[TRSDialScrollView appearance] setMinorTickLength:10.0];
     [[TRSDialScrollView appearance] setMinorTickWidth:4.0];
@@ -52,7 +54,8 @@
     
     [_dialView setDialRangeFrom:0 to:100];
     
-    _dialView.currentValue = 40;
+    _dialView.currentValue = 60;
+    self.income.text = [NSString stringWithFormat:@"%ik", _dialView.currentValue];
     _dialView.delegate = self;
     
 }
@@ -61,12 +64,13 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-     self.age.text = [NSString stringWithFormat:@"%i", _dialView.currentValue];
+    self.income.text = [NSString stringWithFormat:@"%ik", _dialView.currentValue];
+    self.model.income = _dialView.currentValue;
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-
+    
 }
 
 @end
