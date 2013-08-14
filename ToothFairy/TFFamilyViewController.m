@@ -12,7 +12,9 @@
 
 @end
 
-@implementation TFFamilyViewController
+@implementation TFFamilyViewController{
+    NSDictionary *familySize;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +31,8 @@
     [super viewDidLoad];
     
     // setting model data
-    self.selections = @[@"2", @"3", @"4", @"5", @"6", @"7+"];
+    self.selections = @[@"Two", @"Three", @"Four", @"Five", @"More than five"];
+    familySize = @{@"Two" : @2, @"Three" : @3, @"Four" : @4 ,@"Five" : @5, @"More than five" : @6,};
     
     // title
     self.mainTitle.text = @"How big is your\nimmediate family?";
@@ -69,7 +72,8 @@
     cell = [super decorateCell:cell forIndex:indexPath.row];
     
     // align visual state with model
-    if([self model].familySize == [cell.label.text integerValue]){
+    NSNumber *size = [familySize objectForKey:cell.label.text];
+    if([self model].familySize == [size integerValue]){
         cell.image.hidden = NO;
         [self.table scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
     }
@@ -79,7 +83,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [TFBaseViewController nukSound];
+    [TFBaseViewController buttonPressSound];
     
     // set table view slection
     TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
@@ -88,13 +92,10 @@
     
     // align model to state of selection in control
     NSString *selection = [self.selections objectAtIndex:indexPath.row];
-    
-    // corner case of 7+
-    if ([selection isEqualToString:@"7+"])
-        selection = @"7";
-    
+    NSNumber *size = [familySize objectForKey:selection];
+
     // set model
-    [self model].familySize = [selection integerValue];
+    [self model].familySize = [size integerValue];
     
     // perform segue
     [self.parentViewController performSegueWithIdentifier:@"incomeViewController" sender:self];

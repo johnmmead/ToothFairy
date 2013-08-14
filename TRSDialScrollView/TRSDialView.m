@@ -94,8 +94,6 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
                  strokeColor:(UIColor *)strokeColor {
     
     CGSize boundingBox = [text sizeWithFont:self.labelFont];
-    
-//jmead changed    CGFloat label_y_offset = self.majorTickLength + (boundingBox.height / 2);
     CGFloat label_y_offset = 10 + (boundingBox.height / 2);
 
     // We want the label to be centered on the specified x value

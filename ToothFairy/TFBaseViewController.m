@@ -18,6 +18,10 @@
 static SystemSoundID _nuk;
 static SystemSoundID _ping;
 static SystemSoundID _schwit;
+static SystemSoundID _chimesSound;
+static SystemSoundID _fairyAppearsSound;
+static SystemSoundID _dingSound;
+
 
 @implementation TFBaseViewController{
     UIImageView *_tfCheckmark;
@@ -57,11 +61,12 @@ static SystemSoundID _schwit;
 - (void)clearModel{
     [self model].age = 40;
     [self model].education = nil;
-    [self model].familySize = 2;
+    [self model].familySize = 0;
     [self model].gender = nil;
     [self model].income = 60;
     [self model].state = nil;
     [self model].maritalStatus = nil;
+    [self model].finalAmount = 0;
 }
 
 - (BOOL)hasRetinaDisplay
@@ -125,13 +130,13 @@ static SystemSoundID _schwit;
 
 + (void)pingSound
 {
-    if(!_ping){
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"ping" ofType:@"aiff"];
-        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_ping);
-    }
-    AudioServicesPlaySystemSound(_ping);
+//    if(!_ping){
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"ping" ofType:@"aiff"];
+//        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_ping);
+//    }
+//    AudioServicesPlaySystemSound(_ping);
+   // [TFBaseViewController fairyAppearsSound];
 }
-
 
 + (void)schwitSound
 {
@@ -140,6 +145,33 @@ static SystemSoundID _schwit;
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_schwit);
     }
     AudioServicesPlaySystemSound(_schwit);
+}
+
++ (void)buttonPressSound
+{
+    if(!_dingSound){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ding" ofType:@"wav"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_dingSound);
+    }
+    AudioServicesPlaySystemSound(_dingSound );
+}
+
++ (void)sliderMovedSound
+{
+    if(!_chimesSound){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"chimes" ofType:@"mp3"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_chimesSound);
+    }
+    AudioServicesPlaySystemSound(_chimesSound);
+}
+
++ (void)fairyAppearsSound
+{
+    if(!_fairyAppearsSound){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"fairyAppears" ofType:@"wav"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_fairyAppearsSound);
+    }
+    AudioServicesPlaySystemSound(_fairyAppearsSound);
 }
 
 

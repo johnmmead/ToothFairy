@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface TFStartViewController ()
+- (IBAction)click:(id)sender;
 
 @end
 
@@ -43,6 +44,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)click:(id)sender {
+    [TFBaseViewController buttonPressSound];
 }
 
 @end

@@ -12,6 +12,7 @@
 @interface TFIncomeViewController ()<UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet TRSDialScrollView *dialView;
+- (IBAction)click:(id)sender;
 
 
 @end
@@ -71,6 +72,10 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     
+}
+
+- (IBAction)click:(id)sender {
+    [TFBaseViewController buttonPressSound];
 }
 
 @end

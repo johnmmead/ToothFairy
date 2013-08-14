@@ -17,5 +17,6 @@
 @property (assign, nonatomic) NSInteger familySize;
 @property (assign, nonatomic) NSInteger age;
 @property (assign, nonatomic) NSInteger income;
+@property (assign, nonatomic) int finalAmount;
 
 @end

@@ -10,6 +10,7 @@
 #import "TRSDialScrollView.h"
 
 @interface TFAgeViewController ()  <UIScrollViewDelegate>
+- (IBAction)click:(id)sender;
 
 @property (weak, nonatomic) IBOutlet TRSDialScrollView *dialView;
 
@@ -67,6 +68,10 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
 
+}
+
+- (IBAction)click:(id)sender {
+    [TFBaseViewController buttonPressSound];
 }
 
 @end

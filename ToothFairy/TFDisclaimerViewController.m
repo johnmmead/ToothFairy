@@ -10,6 +10,7 @@
 
 @interface TFDisclaimerViewController ()
 
+- (IBAction)click:(id)sender;
 @end
 
 @implementation TFDisclaimerViewController
@@ -39,4 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)click:(id)sender {
+    [TFBaseViewController buttonPressSound];
+}
 @end

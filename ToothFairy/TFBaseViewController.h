@@ -18,9 +18,11 @@
 - (TFCell *)decorateCell:(TFCell *)cell forIndex:(int)index;
 - (UITableView *)configureTable:(UITableView *)table forController:(id)controller;
 - (void)clearModel;
-- (void) playSound:(NSString *)soundName;
 + (void)nukSound;
 + (void)pingSound;
++ (void)sliderMovedSound;
++ (void)fairyAppearsSound;
++ (void)buttonPressSound;
 
 @property (strong, nonatomic) NSArray* selections;
 

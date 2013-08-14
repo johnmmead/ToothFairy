@@ -10,5 +10,6 @@
 
 @interface TFResultsViewController : TFBaseViewController
 - (IBAction)shareClick:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *toothValue;
 
 @end
