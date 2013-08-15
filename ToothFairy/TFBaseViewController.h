@@ -20,6 +20,7 @@
 - (void)clearModel;
 + (void)nukSound;
 + (void)pingSound;
++ (void)dingSound;
 + (void)sliderMovedSound;
 + (void)fairyAppearsSound;
 + (void)buttonPressSound;

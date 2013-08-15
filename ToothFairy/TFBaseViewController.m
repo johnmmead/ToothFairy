@@ -130,12 +130,11 @@ static SystemSoundID _dingSound;
 
 + (void)pingSound
 {
-//    if(!_ping){
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"ping" ofType:@"aiff"];
-//        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_ping);
-//    }
-//    AudioServicesPlaySystemSound(_ping);
-   // [TFBaseViewController fairyAppearsSound];
+    if(!_ping){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ping" ofType:@"aiff"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_ping);
+    }
+    AudioServicesPlaySystemSound(_ping);
 }
 
 + (void)schwitSound
@@ -147,7 +146,7 @@ static SystemSoundID _dingSound;
     AudioServicesPlaySystemSound(_schwit);
 }
 
-+ (void)buttonPressSound
++ (void)dingSound
 {
     if(!_dingSound){
         NSString *path = [[NSBundle mainBundle] pathForResource:@"ding" ofType:@"wav"];
@@ -156,10 +155,15 @@ static SystemSoundID _dingSound;
     AudioServicesPlaySystemSound(_dingSound );
 }
 
++ (void)buttonPressSound
+{
+    [self pingSound];
+}
+
 + (void)sliderMovedSound
 {
     if(!_chimesSound){
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"chimes" ofType:@"mp3"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"chimes" ofType:@"aiff"];
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_chimesSound);
     }
     AudioServicesPlaySystemSound(_chimesSound);

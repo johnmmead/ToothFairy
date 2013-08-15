@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFBaseViewController.h"
+#import "TFAnimationViewController.h"
 
-@interface TFStartViewController : TFBaseViewController
+@interface TFStartViewController : TFAnimationViewController
 @property (strong, nonatomic) IBOutlet UILabel *whatIsTheGoingRateLabel;
 
 @end

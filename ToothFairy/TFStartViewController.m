@@ -11,6 +11,14 @@
 
 @interface TFStartViewController ()
 - (IBAction)click:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *fairy;
+@property (strong, nonatomic) IBOutlet UIImageView *toothFairy;
+@property (strong, nonatomic) IBOutlet UIImageView *starLarge;
+@property (strong, nonatomic) IBOutlet UIImageView *starLeft;
+@property (strong, nonatomic) IBOutlet UIImageView *planetSmall;
+@property (strong, nonatomic) IBOutlet UIImageView *starMedium;
+@property (strong, nonatomic) IBOutlet UIImageView *starFaint;
+@property (strong, nonatomic) IBOutlet UIImageView *wink;
 
 @end
 
@@ -31,6 +39,7 @@
     
     // clear the model- could be returnin from last view controller
     [super clearModel];
+    [self.wink setAlpha:0.0];
 
 }
 
@@ -38,6 +47,18 @@
 {
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
+    [self startAnimations];
+    
+}
+
+- (void)startAnimations{
+    [self twinkleTwinkle:self.starLarge];
+    [self twinkleQuickly:self.starLeft];
+    [self pulsateSlowly:self.planetSmall];
+    [self pulsateSlowly:self.starMedium];
+    [self faintGlow:self.starFaint];
+    [self winkInfrequently:self.wink];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,5 +70,6 @@
 - (IBAction)click:(id)sender {
     [TFBaseViewController buttonPressSound];
 }
+
 
 @end

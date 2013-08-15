@@ -6,10 +6,8 @@
 //  Copyright (c) 2013 sevendesign. All rights reserved.
 //
 
-#import "TFBaseViewController.h"
+#import "TFAnimationViewController.h"
 
-@interface TFResultsViewController : TFBaseViewController
-- (IBAction)shareClick:(id)sender;
-@property (strong, nonatomic) IBOutlet UILabel *toothValue;
+@interface TFResultsViewController : TFAnimationViewController
 
 @end

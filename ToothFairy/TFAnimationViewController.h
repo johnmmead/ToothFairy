@@ -10,4 +10,12 @@
 
 @interface TFAnimationViewController : TFBaseViewController
 
+- (void)twinkleTwinkle:(UIView *)littleStar;
+- (void)twinkleQuickly:(UIView *)littleStar;
+- (void)pulsateSlowly:(UIView *)graphic;
+- (void)pulsateStrong:(UIView *)graphic;
+- (void)faintGlow:(UIView *)graphic;
+- (void)rockSlowly:(UIView *)graphic;
+- (void)winkInfrequently:(UIView *)view;
+
 @end
