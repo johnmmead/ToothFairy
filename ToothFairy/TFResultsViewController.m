@@ -9,11 +9,11 @@
 #import "TFResultsViewController.h"
 
 @interface TFResultsViewController ()
+
 - (IBAction)click:(id)sender;
 - (IBAction)shareClick:(id)sender;
 @property (strong, nonatomic) IBOutlet UIImageView *starUpperLeft;
 @property (strong, nonatomic) IBOutlet UIImageView *fairy;
-
 @property (strong, nonatomic) IBOutlet UILabel *toothValue;
 @property (strong, nonatomic) IBOutlet UIImageView *disclaimer;
 @property (strong, nonatomic) IBOutlet UIImageView *planet;
@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *whyButton;
 @property (strong, nonatomic) IBOutlet UIButton *shareButton;
 @property (strong, nonatomic) IBOutlet UIImageView *toothFairyWording;
+@property (strong, nonatomic) IBOutlet UIImageView *bewm;
 
 @end
 
@@ -70,6 +71,7 @@
     self.toothValue.alpha = 0.0;
     self.planet.alpha = 0.0;
     self.toothFairyWording.alpha= 0.0;
+    self.bewm.alpha= 0.0;
     
     // little planet pulses from the get go, little star in lower left twinkles
     [self pulsateSlowly:self.planet];
@@ -126,7 +128,9 @@
 }
 
 - (void)scaleBack {
-    [UIView animateWithDuration:0.33 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:0.33
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear animations:^{
         [self.fairy setTransform:CGAffineTransformMakeScale(7.3 , 7.3)];
     } completion:^(BOOL finished) {
         if (finished) {
@@ -139,11 +143,25 @@
 - (void)showMeTheMoney{
     [UIView animateWithDuration:1.5 animations:^{
         [self.toothValue setAlpha: 1.0];
+        [self blowMeUp];
     } completion:^(BOOL finished) {
         [self pulsateStrong:self.toothValue];
         [TFBaseViewController dingSound];
         [self fadeButtonsBack];
     }];
+}
+
+- (void)blowMeUp{
+    [UIView animateWithDuration:1.0
+                          delay:0.13
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self.bewm setAlpha:1.0];
+                     } completion:^(BOOL finished) {
+                        [UIView animateWithDuration:.33 animations:^{
+                            [self.bewm setAlpha:0.0];
+                        }];
+                     }];
 }
 
 - (void)fadeButtonsBack{

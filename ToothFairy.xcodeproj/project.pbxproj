@@ -131,6 +131,8 @@
 		88D7922317BC23180018E2B3 /* starSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D7922217BC23180018E2B3 /* starSmall.png */; };
 		88D7922517BC28D50018E2B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D7922417BC28D50018E2B3 /* AVFoundation.framework */; };
 		88D7922717BC37EC0018E2B3 /* chimes.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 88D7922617BC37EC0018E2B3 /* chimes.aiff */; };
+		88D7922A17BC963D0018E2B3 /* bewm.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D7922817BC963D0018E2B3 /* bewm.png */; };
+		88D7922B17BC963D0018E2B3 /* bewm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D7922917BC963D0018E2B3 /* bewm@2x.png */; };
 		88F26B4617BA872C003FE4BF /* desktopIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F26B4517BA872C003FE4BF /* desktopIcon.png */; };
 		88F26B4817BA8749003FE4BF /* desktopIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F26B4717BA8749003FE4BF /* desktopIcon@2x.png */; };
 /* End PBXBuildFile section */
@@ -285,6 +287,8 @@
 		88D7922217BC23180018E2B3 /* starSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starSmall.png; sourceTree = "<group>"; };
 		88D7922417BC28D50018E2B3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		88D7922617BC37EC0018E2B3 /* chimes.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chimes.aiff; sourceTree = "<group>"; };
+		88D7922817BC963D0018E2B3 /* bewm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bewm.png; sourceTree = "<group>"; };
+		88D7922917BC963D0018E2B3 /* bewm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bewm@2x.png"; sourceTree = "<group>"; };
 		88F26B4517BA872C003FE4BF /* desktopIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desktopIcon.png; path = ../desktopIcon.png; sourceTree = "<group>"; };
 		88F26B4717BA8749003FE4BF /* desktopIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "desktopIcon@2x.png"; path = "../desktopIcon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -371,6 +375,8 @@
 		88170CEF17AB36020059FE25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				88D7922817BC963D0018E2B3 /* bewm.png */,
+				88D7922917BC963D0018E2B3 /* bewm@2x.png */,
 				88B74DA317B858480076414A /* animationDisclaimer.png */,
 				88B74DA417B858480076414A /* animationDisclaimer@2x.png */,
 				88B74D9D17B853110076414A /* backgroundHeavens-568h@2x.png */,
@@ -743,6 +749,8 @@
 				88D7922117BC23040018E2B3 /* planet@2x.png in Resources */,
 				88D7922317BC23180018E2B3 /* starSmall.png in Resources */,
 				88D7922717BC37EC0018E2B3 /* chimes.aiff in Resources */,
+				88D7922A17BC963D0018E2B3 /* bewm.png in Resources */,
+				88D7922B17BC963D0018E2B3 /* bewm@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

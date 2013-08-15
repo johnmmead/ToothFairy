@@ -860,11 +860,16 @@
                                 <rect key="frame" x="140" y="150" width="40" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bewm.png" id="Mf7-aE-Qh7">
+                                <rect key="frame" x="-34" y="78" width="388" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DLi-Rb-aAV"/>
                     <connections>
+                        <outlet property="bewm" destination="Mf7-aE-Qh7" id="tfy-lq-3KI"/>
                         <outlet property="disclaimer" destination="7LV-gc-Sdl" id="U5T-bm-cRN"/>
                         <outlet property="fairy" destination="YHI-DQ-FpF" id="GMu-Hn-OEl"/>
                         <outlet property="planet" destination="m5Z-ua-dDd" id="Siq-Qk-Cbi"/>
@@ -935,6 +940,7 @@
         <image name="animationDisclaimer.png" width="219" height="96"/>
         <image name="backgroundHeavens.png" width="320" height="480"/>
         <image name="backgroundInterior.png" width="320" height="480"/>
+        <image name="bewm.png" width="388" height="90"/>
         <image name="buttonCalculateNow.png" width="241" height="44"/>
         <image name="buttonContinue.png" width="241" height="44"/>
         <image name="buttonFairyBarButton.png" width="58" height="58"/>
@@ -1037,6 +1043,7 @@
             <relationships>
                 <relationship kind="action" name="click:"/>
                 <relationship kind="action" name="shareClick:"/>
+                <relationship kind="outlet" name="bewm" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="disclaimer" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="fairy" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="planet" candidateClass="UIImageView"/>
