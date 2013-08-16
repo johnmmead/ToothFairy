@@ -81,7 +81,7 @@
     
     // set a timer for ten seconds - when it's done, start showing and animating
     // the assets that were turned off for first ten seconds
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(startAnimations) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(startAnimations) userInfo:nil repeats:NO];
 }
 
 - (void)startAnimations{
