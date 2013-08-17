@@ -162,11 +162,11 @@ static SystemSoundID _dingSound;
 
 + (void)sliderMovedSound
 {
-    if(!_chimesSound){
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"chimes" ofType:@"aiff"];
-        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_chimesSound);
-    }
-    AudioServicesPlaySystemSound(_chimesSound);
+//    if(!_chimesSound){
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"chimes" ofType:@"aiff"];
+//        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: path], &_chimesSound);
+//    }
+//    AudioServicesPlaySystemSound(_chimesSound);
 }
 
 + (void)fairyAppearsSound

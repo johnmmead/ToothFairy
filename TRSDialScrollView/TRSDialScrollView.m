@@ -21,6 +21,7 @@
 @property (strong, nonatomic) UIScrollView *scrollView;
 @property (strong, nonatomic) UIView *overlayView;
 @property (strong, nonatomic) TRSDialView *dialView;
+@property (assign, nonatomic) BOOL beenHere;
 
 @end
 
@@ -155,10 +156,11 @@
     int offset = (int)scrollView.contentOffset.x;
     int dist = (int)self.minorTickDistance;
     
-    if ((offset % dist) == 0)
+    if ((offset % dist) == 0 && self.beenHere)
     {
         [TFBaseViewController nukSound];
     }
+    self.beenHere = YES;
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {

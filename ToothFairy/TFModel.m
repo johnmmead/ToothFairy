@@ -83,9 +83,9 @@
     }
     
     // region
-    if([[self plusStates] indexOfObject:self.state]){
+    if([[self plusStates] indexOfObject:self.state] != NSNotFound){
         [finalValues setValue:@4.4F forKey:@"region"]; // North East
-    } else if ([[self minusStates] indexOfObject:self.state]){
+    } else if ([[self minusStates] indexOfObject:self.state] != NSNotFound){
         [finalValues setValue:@3.8F forKey:@"region"]; // Midwest
     } else {
         [finalValues setValue:@4.2F forKey:@"region"]; // South and West

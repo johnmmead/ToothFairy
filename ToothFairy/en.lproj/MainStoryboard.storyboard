@@ -869,11 +869,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animationDisclaimer.png" id="7LV-gc-Sdl">
-                                <rect key="frame" x="51" y="316" width="219" height="96"/>
+                                <rect key="frame" x="35" y="307" width="251" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="toothFairyWording.png" id="Y4s-G8-WCL">
-                                <rect key="frame" x="46" y="291" width="228" height="51"/>
+                                <rect key="frame" x="46" y="297" width="228" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="fairyNoSmile.png" id="YHI-DQ-FpF">
@@ -957,7 +957,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="animationDisclaimer.png" width="219" height="96"/>
+        <image name="animationDisclaimer.png" width="251" height="112"/>
         <image name="backgroundHeavens.png" width="320" height="480"/>
         <image name="backgroundInterior.png" width="320" height="480"/>
         <image name="bewm.png" width="388" height="90"/>
