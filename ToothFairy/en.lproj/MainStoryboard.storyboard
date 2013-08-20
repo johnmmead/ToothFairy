@@ -123,7 +123,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableBottom.png" id="TMs-Nq-Jx7">
-                                <rect key="frame" x="27" y="229" width="264" height="8"/>
+                                <rect key="frame" x="27" y="223" width="264" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="step1Of7.png" id="JMK-JK-7XH">
@@ -384,7 +384,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableBottom.png" id="cTy-Be-b62">
-                                <rect key="frame" x="27" y="269" width="264" height="8"/>
+                                <rect key="frame" x="27" y="263" width="264" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="step4Of7.png" id="GwY-uM-Ph6">
@@ -452,7 +452,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableBottom.png" id="UQP-4s-IKo">
-                                <rect key="frame" x="27" y="320" width="264" height="8"/>
+                                <rect key="frame" x="27" y="314" width="264" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="step3Of7.png" id="zYc-j6-occ">
@@ -566,7 +566,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableBottom.png" id="vCa-3n-pEw">
-                                <rect key="frame" x="27" y="233" width="264" height="8"/>
+                                <rect key="frame" x="27" y="227" width="264" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="step5Of7.png" id="ET6-5P-C9G">
@@ -657,7 +657,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableBottom.png" id="J7z-6s-UoV">
-                                <rect key="frame" x="27" y="336" width="264" height="8"/>
+                                <rect key="frame" x="27" y="330" width="264" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="step6Of7.png" id="Lua-po-kzi">
@@ -995,119 +995,6 @@
         <image name="visaLogo.png" width="199" height="36"/>
         <image name="whatsTheGoingRate.png" width="260" height="33"/>
     </resources>
-    <classes>
-        <class className="TFAgeViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFAgeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="click:"/>
-                <relationship kind="outlet" name="age" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="dialView" candidateClass="TRSDialScrollView"/>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TFAnimationViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFAnimationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="fairy" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="TFBaseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFBaseViewController.h"/>
-        </class>
-        <class className="TFDisclaimerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFDisclaimerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="click:"/>
-            </relationships>
-        </class>
-        <class className="TFEducationViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFEducationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TFFamilyViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFFamilyViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TFFinalViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFFinalViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="click:"/>
-            </relationships>
-        </class>
-        <class className="TFGenderViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFGenderViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TFIncomeViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFIncomeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="click:"/>
-                <relationship kind="outlet" name="dialView" candidateClass="TRSDialScrollView"/>
-                <relationship kind="outlet" name="income" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TFMaritalStatusViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFMaritalStatusViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TFResultsViewController" superclassName="TFAnimationViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFResultsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="click:"/>
-                <relationship kind="action" name="shareClick:"/>
-                <relationship kind="outlet" name="bewm" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="disclaimer" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="fairy" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="planet" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="starLarge" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starLowerLeft" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starMedium" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starUpperLeft" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="toothFairyWording" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="toothValue" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="whyButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="TFStartViewController" superclassName="TFAnimationViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFStartViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="click:"/>
-                <relationship kind="outlet" name="fairy" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="planetSmall" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starFaint" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starLarge" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starLeft" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="starMedium" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="toothFairy" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="whatIsTheGoingRateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="wink" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="TFStateViewController" superclassName="TFBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TFStateViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TRSDialScrollView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TRSDialScrollView.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

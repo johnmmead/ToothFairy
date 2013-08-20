@@ -8,6 +8,7 @@
 
 #import "TFMaritalStatusViewController.h"
 #import "TFCell.h"
+#import "TFTopCell.h"
 
 @interface TFMaritalStatusViewController ()
 
@@ -27,6 +28,8 @@
     
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
+    [self.table registerNib:[UINib nibWithNibName:@"TFTopCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFTopCell"];
+
     self.table = [super configureTable:self.table forController:self];
 
     
@@ -57,15 +60,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
-    cell = [super decorateCell:cell forIndex:indexPath.row];
-    
-    // align visual state with model
-    if([[self model].maritalStatus isEqualToString:cell.label.text])
-        cell.image.hidden = NO;
-    
-    return cell;
+    if(indexPath.row == 0){
+        TFTopCell *topCell = (TFTopCell *)[tableView dequeueReusableCellWithIdentifier:@"TFTopCell" forIndexPath:indexPath];
+        topCell = [super decorateTopCell:topCell forIndex:indexPath.row];
+        // align visual state with model
+        if([[self model].maritalStatus isEqualToString:topCell.label.text])
+            topCell.image.hidden = NO;
+        return topCell;
+    } else {
+        TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
+        cell = [super decorateCell:cell forIndex:indexPath.row];
+        // align visual state with model
+        if([[self model].maritalStatus isEqualToString:cell.label.text])
+            cell.image.hidden = NO;
+        return cell;
+    }
+    return nil;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -84,6 +96,12 @@
     [self.parentViewController performSegueWithIdentifier:@"familyViewController" sender:self];
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        return 33.0;
+    } else {
+        return 39.0;
+    }
+}
 
 @end

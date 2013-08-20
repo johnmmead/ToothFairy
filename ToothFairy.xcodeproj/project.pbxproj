@@ -95,6 +95,8 @@
 		885B8D3D17B80F9C009284D2 /* step7Of7.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D3B17B80F9B009284D2 /* step7Of7.png */; };
 		885B8D3E17B80F9C009284D2 /* step7Of7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D3C17B80F9C009284D2 /* step7Of7@2x.png */; };
 		885B8D4417B81259009284D2 /* TFIncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8D4317B81258009284D2 /* TFIncomeViewController.m */; };
+		888D959917C3ED990032E476 /* TFTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888D959817C3ED990032E476 /* TFTopCell.xib */; };
+		888D959C17C3EE8E0032E476 /* TFTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888D959B17C3EE8E0032E476 /* TFTopCell.m */; };
 		88B74D9817B816B60076414A /* buttonCalculateNow.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B74D9617B816B60076414A /* buttonCalculateNow.png */; };
 		88B74D9917B816B60076414A /* buttonCalculateNow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B74D9717B816B60076414A /* buttonCalculateNow@2x.png */; };
 		88B74D9C17B827830076414A /* TFAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B74D9B17B827820076414A /* TFAnimationViewController.m */; };
@@ -248,6 +250,9 @@
 		885B8D3C17B80F9C009284D2 /* step7Of7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step7Of7@2x.png"; sourceTree = "<group>"; };
 		885B8D4217B81256009284D2 /* TFIncomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFIncomeViewController.h; path = ../TFIncomeViewController.h; sourceTree = "<group>"; };
 		885B8D4317B81258009284D2 /* TFIncomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFIncomeViewController.m; path = ../TFIncomeViewController.m; sourceTree = "<group>"; };
+		888D959817C3ED990032E476 /* TFTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFTopCell.xib; sourceTree = "<group>"; };
+		888D959A17C3EE8E0032E476 /* TFTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTopCell.h; sourceTree = "<group>"; };
+		888D959B17C3EE8E0032E476 /* TFTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTopCell.m; sourceTree = "<group>"; };
 		88B74D9617B816B60076414A /* buttonCalculateNow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonCalculateNow.png; sourceTree = "<group>"; };
 		88B74D9717B816B60076414A /* buttonCalculateNow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonCalculateNow@2x.png"; sourceTree = "<group>"; };
 		88B74D9A17B827820076414A /* TFAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAnimationViewController.h; sourceTree = "<group>"; };
@@ -476,6 +481,9 @@
 				885B8BAE17B46607009284D2 /* TFCell.h */,
 				885B8BAF17B46608009284D2 /* TFCell.m */,
 				885B8CCE17B56880009284D2 /* TFCell.xib */,
+				888D959A17C3EE8E0032E476 /* TFTopCell.h */,
+				888D959B17C3EE8E0032E476 /* TFTopCell.m */,
+				888D959817C3ED990032E476 /* TFTopCell.xib */,
 				88170CF317AB49690059FE25 /* TFBaseViewController.h */,
 				88170CF417AB49690059FE25 /* TFBaseViewController.m */,
 				88170CFC17AC1ED30059FE25 /* TFConstants.h */,
@@ -753,6 +761,7 @@
 				88EBE68517C28D4000F9CA31 /* visaLogo@2x.png in Resources */,
 				88EBE68817C2FC3400F9CA31 /* finalDisclaimer.png in Resources */,
 				88EBE68917C2FC3400F9CA31 /* finalDisclaimer@2x.png in Resources */,
+				888D959917C3ED990032E476 /* TFTopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +793,7 @@
 				88B74D9C17B827830076414A /* TFAnimationViewController.m in Sources */,
 				88B74DA917B86F410076414A /* TFResultsViewController.m in Sources */,
 				88B74DB017B878720076414A /* TFFinalViewController.m in Sources */,
+				888D959C17C3EE8E0032E476 /* TFTopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

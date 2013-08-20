@@ -11,6 +11,7 @@
 #import "TFBaseViewController.h"
 #import "TFAppDelegate.h"
 #import "TFCell.h"
+#import "TFTopCell.h"
 
 @interface TFBaseViewController ()
 @end
@@ -85,27 +86,30 @@ static SystemSoundID _dingSound;
     return _tfCheckmark;
 }
 
+
 // table view common stuff
 - (TFCell *)decorateCell:(TFCell *)cell forIndex:(int)index {
     
-    // if this is the first cell there is no border
-    if(index == 0){
-        cell.dots.hidden = YES;
-    } else {
-        cell.dots.hidden = NO;
-    }
-    
-    // align the view checkmark with the model
-    if([self.model.gender isEqualToString:[self.selections objectAtIndex:index]]){
-        cell.image.hidden = NO;
-    } else {
-        cell.image.hidden = YES;
-    }
+    // turn off the checkmark by default
+    cell.image.hidden = YES;
     
     cell.label.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:21.0f];
     cell.label.text = [self.selections objectAtIndex:index];
     cell.label.textColor = [UIColor whiteColor];
+    
+    return cell;
+}
 
+// table view common stuff
+- (TFTopCell *)decorateTopCell:(TFTopCell *)cell forIndex:(int)index {
+    
+    // turn off the checkmark by default
+    cell.image.hidden = YES;
+    
+    cell.label.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:21.0f];
+    cell.label.text = [self.selections objectAtIndex:index];
+    cell.label.textColor = [UIColor whiteColor];
+    
     return cell;
 }
 

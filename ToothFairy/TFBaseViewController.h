@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TFModel.h"
 #import "TFCell.h"
+#import "TFTopCell.h"
 
 @interface TFBaseViewController : UIViewController
 
@@ -16,6 +17,7 @@
 - (BOOL)hasRetinaDisplay;
 - (UIImageView *)checkmark;
 - (TFCell *)decorateCell:(TFCell *)cell forIndex:(int)index;
+- (TFTopCell *)decorateTopCell:(TFTopCell *)cell forIndex:(int)index;
 - (UITableView *)configureTable:(UITableView *)table forController:(id)controller;
 - (void)clearModel;
 + (void)nukSound;
