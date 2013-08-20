@@ -163,10 +163,6 @@
     self.beenHere = YES;
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [TFBaseViewController sliderMovedSound];
-}
-
 #pragma mark - Properties
 
 - (void)setMinorTicksPerMajorTick:(NSInteger)minorTicksPerMajorTick

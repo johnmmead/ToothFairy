@@ -48,9 +48,9 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     // final value presentation
-    self.toothValue.font = [UIFont fontWithName:@"Baskerville-Bold" size:28.0];
+    self.toothValue.font = [UIFont fontWithName:@"Baskerville-Bold" size:52.0];
     self.toothValue.textColor = [UIColor whiteColor];
-    self.toothValue.text = [NSString stringWithFormat:@"$%d.00", [self model].finalAmount];
+    self.toothValue.text = [NSString stringWithFormat:@"$%d", [self model].finalAmount];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -116,7 +116,7 @@
 
 - (void)scaleFairy {
     [self.fairy setAlpha:0.0];
-    [UIView animateWithDuration:1.37 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:1.99 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.fairy setTransform:CGAffineTransformMakeScale(13.0 , 13.0)];
         self.fairy.alpha = 0.65;
     } completion:^(BOOL finished) {

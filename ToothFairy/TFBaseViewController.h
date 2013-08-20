@@ -21,7 +21,7 @@
 + (void)nukSound;
 + (void)pingSound;
 + (void)dingSound;
-+ (void)sliderMovedSound;
++ (void)chimesSound;
 + (void)fairyAppearsSound;
 + (void)buttonPressSound;
 

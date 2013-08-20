@@ -51,7 +51,7 @@
     [[TRSDialScrollView appearance] setShadowOffset:CGSizeMake(0, 1)];
     [[TRSDialScrollView appearance] setShadowBlur:0.9f];
     
-    [_dialView setDialRangeFrom:5 to:100];
+    [_dialView setDialRangeFrom:10 to:100];
     
     _dialView.currentValue = 40;
     _dialView.delegate = self;

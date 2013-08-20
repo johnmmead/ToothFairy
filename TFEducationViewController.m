@@ -23,7 +23,7 @@
     self.selections = @[@"High School", @"College", @"Graduate School"];
     
     // title
-    self.mainTitle.text = @"What is your\nhighest level\nof education?";
+    self.mainTitle.text = @"What is your\nlevel of education?";
     
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];

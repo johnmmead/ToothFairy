@@ -12,6 +12,9 @@
 
 @synthesize gender, age, income, education, state, maritalStatus, familySize, finalAmount;
 
+- (void)setIncome:(NSInteger)reportedIncome{
+    income = reportedIncome;
+}
 
 - (int)finalAmount{
     
@@ -99,11 +102,11 @@
     
     // calculate final dollar amount
     toothValue = toothValue / finalValues.count;
-    if (toothValue < 3.95){
+    if (toothValue < 4.19){
         returnValue = 1;
-    } else if (toothValue >= 3.95 && toothValue < 4.19){
+    } else if (toothValue >= 4.19 && toothValue < 4.31){
         returnValue = 2;
-    } else if (toothValue >= 4.19 && toothValue < 4.43){
+    } else if (toothValue >= 4.31 && toothValue < 4.43){
         returnValue = 3;
     } else if (toothValue >= 4.43 && toothValue < 4.55){
         returnValue = 4;

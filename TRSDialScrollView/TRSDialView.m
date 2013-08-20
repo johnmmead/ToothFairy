@@ -80,7 +80,7 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
     
     frame.size.width = (_maximum - _minimum) * _minorTickDistance + self.superview.frame.size.width;
     
-    NSLog(@"frame = %@", NSStringFromCGRect(frame));
+   // NSLog(@"frame = %@", NSStringFromCGRect(frame));
     
     self.frame = frame;
 }
@@ -92,6 +92,11 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
                         text:(NSString *)text
                    fillColor:(UIColor *)fillColor
                  strokeColor:(UIColor *)strokeColor {
+    
+    // manage max case that gets a plus sign
+    if ([text integerValue] == self.maximum){
+        text = [text stringByAppendingString:@"+"];
+    }
     
     CGSize boundingBox = [text sizeWithFont:self.labelFont];
     CGFloat label_y_offset = 10 + (boundingBox.height / 2);
@@ -223,7 +228,7 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    NSLog(@"frame = %@\n", NSStringFromCGRect(rect));
+   // NSLog(@"frame = %@\n", NSStringFromCGRect(rect));
 
     CGContextRef context = UIGraphicsGetCurrentContext();
 
