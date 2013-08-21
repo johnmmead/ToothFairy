@@ -154,14 +154,14 @@
 		8806D47317BBD04E008E9659 /* starMedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starMedium.png; sourceTree = "<group>"; };
 		8806D47417BBD04E008E9659 /* starMedium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starMedium@2x.png"; sourceTree = "<group>"; };
 		8806D47517BBD04E008E9659 /* starSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starSmall@2x.png"; sourceTree = "<group>"; };
-		88170CBB17AB1A4D0059FE25 /* ToothFairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToothFairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88170CBB17AB1A4D0059FE25 /* toothfairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toothfairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88170CBE17AB1A4D0059FE25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		88170CC017AB1A4D0059FE25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88170CC217AB1A4D0059FE25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		88170CC617AB1A4D0059FE25 /* ToothFairy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToothFairy-Info.plist"; sourceTree = "<group>"; };
+		88170CC617AB1A4D0059FE25 /* toothfairy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toothfairy-Info.plist"; sourceTree = "<group>"; };
 		88170CC817AB1A4D0059FE25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88170CCA17AB1A4D0059FE25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88170CCC17AB1A4D0059FE25 /* ToothFairy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToothFairy-Prefix.pch"; sourceTree = "<group>"; };
+		88170CCC17AB1A4D0059FE25 /* toothfairy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "toothfairy-Prefix.pch"; sourceTree = "<group>"; };
 		88170CCD17AB1A4D0059FE25 /* TFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFAppDelegate.h; sourceTree = "<group>"; };
 		88170CCE17AB1A4D0059FE25 /* TFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFAppDelegate.m; sourceTree = "<group>"; };
 		88170CD017AB1A4D0059FE25 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -328,7 +328,7 @@
 		88170CBC17AB1A4D0059FE25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88170CBB17AB1A4D0059FE25 /* ToothFairy.app */,
+				88170CBB17AB1A4D0059FE25 /* toothfairy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -367,10 +367,10 @@
 				88B74DBF17B88A140076414A /* Sounds */,
 				885B8B0617B008A5009284D2 /* Fonts */,
 				88170CEF17AB36020059FE25 /* Images */,
-				88170CC617AB1A4D0059FE25 /* ToothFairy-Info.plist */,
+				88170CC617AB1A4D0059FE25 /* toothfairy-Info.plist */,
 				88170CC717AB1A4D0059FE25 /* InfoPlist.strings */,
 				88170CCA17AB1A4D0059FE25 /* main.m */,
-				88170CCC17AB1A4D0059FE25 /* ToothFairy-Prefix.pch */,
+				88170CCC17AB1A4D0059FE25 /* toothfairy-Prefix.pch */,
 				88170CD017AB1A4D0059FE25 /* Default.png */,
 				88170CD217AB1A4D0059FE25 /* Default@2x.png */,
 				88170CD417AB1A4D0059FE25 /* Default-568h@2x.png */,
@@ -610,9 +610,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88170CBA17AB1A4D0059FE25 /* ToothFairy */ = {
+		88170CBA17AB1A4D0059FE25 /* toothfairy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88170CDE17AB1A4D0059FE25 /* Build configuration list for PBXNativeTarget "ToothFairy" */;
+			buildConfigurationList = 88170CDE17AB1A4D0059FE25 /* Build configuration list for PBXNativeTarget "toothfairy" */;
 			buildPhases = (
 				88170CB717AB1A4D0059FE25 /* Sources */,
 				88170CB817AB1A4D0059FE25 /* Frameworks */,
@@ -622,9 +622,9 @@
 			);
 			dependencies = (
 			);
-			name = ToothFairy;
+			name = toothfairy;
 			productName = ToothFairy;
-			productReference = 88170CBB17AB1A4D0059FE25 /* ToothFairy.app */;
+			productReference = 88170CBB17AB1A4D0059FE25 /* toothfairy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -637,7 +637,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = sevendesign;
 			};
-			buildConfigurationList = 88170CB617AB1A4D0059FE25 /* Build configuration list for PBXProject "ToothFairy" */;
+			buildConfigurationList = 88170CB617AB1A4D0059FE25 /* Build configuration list for PBXProject "toothfairy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -649,7 +649,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88170CBA17AB1A4D0059FE25 /* ToothFairy */,
+				88170CBA17AB1A4D0059FE25 /* toothfairy */,
 			);
 		};
 /* End PBXProject section */
@@ -831,7 +831,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: John Mead";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -846,7 +846,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = toothfairy;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CAFD287-4F76-4443-B42B-03C4EBCDCEFF";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -862,8 +865,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: John Mead";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: John Mead";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Seven Design Group Inc. (5945LE7VBT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Seven Design Group Inc. (5945LE7VBT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -871,9 +874,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "9CAFD287-4F76-4443-B42B-03C4EBCDCEFF";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CAFD287-4F76-4443-B42B-03C4EBCDCEFF";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -882,9 +887,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ToothFairy/ToothFairy-Prefix.pch";
-				INFOPLIST_FILE = "ToothFairy/ToothFairy-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ToothFairy/toothfairy-Prefix.pch";
+				INFOPLIST_FILE = "ToothFairy/toothfairy-Info.plist";
+				PRODUCT_NAME = toothfairy;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -892,12 +898,13 @@
 		88170CE017AB1A4D0059FE25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: John Mead";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Seven Design Group Inc. (5945LE7VBT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ToothFairy/ToothFairy-Prefix.pch";
-				INFOPLIST_FILE = "ToothFairy/ToothFairy-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CAFD287-4F76-4443-B42B-03C4EBCDCEFF";
+				GCC_PREFIX_HEADER = "ToothFairy/toothfairy-Prefix.pch";
+				INFOPLIST_FILE = "ToothFairy/toothfairy-Info.plist";
+				PRODUCT_NAME = toothfairy;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -905,7 +912,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88170CB617AB1A4D0059FE25 /* Build configuration list for PBXProject "ToothFairy" */ = {
+		88170CB617AB1A4D0059FE25 /* Build configuration list for PBXProject "toothfairy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88170CDC17AB1A4D0059FE25 /* Debug */,
@@ -914,7 +921,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88170CDE17AB1A4D0059FE25 /* Build configuration list for PBXNativeTarget "ToothFairy" */ = {
+		88170CDE17AB1A4D0059FE25 /* Build configuration list for PBXNativeTarget "toothfairy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88170CDF17AB1A4D0059FE25 /* Debug */,

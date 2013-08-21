@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "88170CBA17AB1A4D0059FE25"
-               BuildableName = "ToothFairy.app"
-               BlueprintName = "ToothFairy"
-               ReferencedContainer = "container:ToothFairy.xcodeproj">
+               BuildableName = "toothfairy.app"
+               BlueprintName = "toothfairy"
+               ReferencedContainer = "container:toothfairy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "88170CBA17AB1A4D0059FE25"
-            BuildableName = "ToothFairy.app"
-            BlueprintName = "ToothFairy"
-            ReferencedContainer = "container:ToothFairy.xcodeproj">
+            BuildableName = "toothfairy.app"
+            BlueprintName = "toothfairy"
+            ReferencedContainer = "container:toothfairy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "88170CBA17AB1A4D0059FE25"
-            BuildableName = "ToothFairy.app"
-            BlueprintName = "ToothFairy"
-            ReferencedContainer = "container:ToothFairy.xcodeproj">
+            BuildableName = "toothfairy.app"
+            BlueprintName = "toothfairy"
+            ReferencedContainer = "container:toothfairy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "88170CBA17AB1A4D0059FE25"
-            BuildableName = "ToothFairy.app"
-            BlueprintName = "ToothFairy"
-            ReferencedContainer = "container:ToothFairy.xcodeproj">
+            BuildableName = "toothfairy.app"
+            BlueprintName = "toothfairy"
+            ReferencedContainer = "container:toothfairy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
