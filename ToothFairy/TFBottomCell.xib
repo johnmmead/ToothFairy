@@ -61,7 +61,7 @@
 								<string key="NSFrame">{{0, 1}, {264, 4}}</string>
 								<reference key="NSSuperview" ref="744201312"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="143497340"/>
+								<reference key="NSNextKeyView" ref="90006402"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -73,7 +73,7 @@
 							<object class="IBUIImageView" id="143497340">
 								<reference key="NSNextResponder" ref="744201312"/>
 								<int key="NSvFlags">266</int>
-								<string key="NSFrame">{{0, 32}, {264, 6}}</string>
+								<string key="NSFrame">{{0, 31}, {264, 8}}</string>
 								<reference key="NSSuperview" ref="744201312"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="581771775"/>
@@ -91,6 +91,7 @@
 								<string key="NSFrame">{{219, 11}, {20, 20}}</string>
 								<reference key="NSSuperview" ref="744201312"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="143497340"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<int key="IBUIContentMode">1</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -106,7 +107,7 @@
 								<string key="NSFrame">{{10, 8}, {196, 34}}</string>
 								<reference key="NSSuperview" ref="744201312"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="90006402"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -159,6 +160,7 @@
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<int key="IBUIContentMode">1</int>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+				<int key="IBUISelectionStyle">0</int>
 				<reference key="IBUIContentView" ref="744201312"/>
 				<bool key="IBUIShouldIndentWhileEditing">NO</bool>
 				<string key="IBUIReuseIdentifier">TFBottomCell</string>

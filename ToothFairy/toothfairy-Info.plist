@@ -16,6 +16,8 @@
 			<array>
 				<string>desktopIcon.png</string>
 				<string>desktopIcon@2x.png</string>
+				<string>desktopIcon~ipad.png</string>
+				<string>desktopIcon@2x~ipad.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>

@@ -46,6 +46,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.table reloadData];
+    self.table.backgroundColor = [UIColor clearColor];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
