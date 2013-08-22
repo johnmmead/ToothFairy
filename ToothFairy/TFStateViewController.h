@@ -13,5 +13,8 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *table;
 @property (strong, nonatomic) IBOutlet UILabel *mainTitle;
+@property (strong, nonatomic) IBOutlet UIImageView *tableTop;
+@property (strong, nonatomic) IBOutlet UIImageView *tableBottom;
+@property (strong, nonatomic) IBOutlet UIView *tableContainer;
 
 @end

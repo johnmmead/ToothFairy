@@ -8,7 +8,6 @@
 
 #import "TFStateViewController.h"
 #import "TFCell.h"
-#import "TFTopCell.h"
 
 @interface TFStateViewController ()
 
@@ -38,14 +37,32 @@
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
     [self.table registerNib:[UINib nibWithNibName:@"TFTopCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFTopCell"];
+    [self.table registerNib:[UINib nibWithNibName:@"TFBottomCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFBottomCell"];
 
     self.table = [super configureTable:self.table forController:self];
+    
+
+    //self.tableTop.frame = self.tableContainer.frame.origin;
+    
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.table reloadData];
+    
+    // make sure the table top and bottom elements are correctly aligned
+    CGRect tableFrame = self.tableContainer.frame;
+    
+    // the top
+    CGRect tableTopFrame = self.tableTop.frame;
+    CGRect newTop = CGRectMake(tableFrame.origin.x, tableFrame.origin.y - tableTopFrame.size.height, tableFrame.size.width, tableTopFrame.size.height);
+    self.tableTop.frame = newTop;
+    
+    // the bottom
+    CGRect tableBottomFrame = self.tableBottom.frame;
+    CGRect newBottom = CGRectMake(tableFrame.origin.x, tableFrame.size.height + tableFrame.origin.y, tableFrame.size.width, tableBottomFrame.size.height);
+    self.tableBottom.frame = newBottom;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -68,24 +85,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 0){
-        TFTopCell *topCell = (TFTopCell *)[tableView dequeueReusableCellWithIdentifier:@"TFTopCell" forIndexPath:indexPath];
-        topCell = [super decorateTopCell:topCell forIndex:indexPath.row];
-        // align visual state with model
-        if([[self model].state isEqualToString:topCell.label.text])
-            topCell.image.hidden = NO;
-        return topCell;
-    } else {
-        TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
-        cell = [super decorateCell:cell forIndex:indexPath.row];
-        // align visual state with model
-        if([[self model].state isEqualToString:cell.label.text])
-            cell.image.hidden = NO;
-        return cell;
-    }
-    return nil;
-}
+    TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
+    cell = [self decorateCell:cell forIndex:indexPath.row];
 
+    if(indexPath.row == 0){ // top cell
+        cell.dots.hidden = YES;
+    } else {
+        cell.dots.hidden = NO;
+    }
+
+    // align visual state with model
+    if([[self model].state isEqualToString:cell.label.text])
+        cell.image.hidden = NO;
+    
+    return cell;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -104,12 +118,5 @@
     [self.parentViewController performSegueWithIdentifier:@"educationViewController" sender:self];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        return 33.0;
-    } else {
-        return 39.0;
-    }
-}
 
 @end

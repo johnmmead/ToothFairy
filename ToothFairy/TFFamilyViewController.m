@@ -40,6 +40,7 @@
     // table view config
     [self.table registerNib:[UINib nibWithNibName:@"TFCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFCell"];
     [self.table registerNib:[UINib nibWithNibName:@"TFTopCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFTopCell"];
+    [self.table registerNib:[UINib nibWithNibName:@"TFBottomCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TFBottomCell"];
 
     self.table = [super configureTable:self.table forController:self];
     
@@ -70,30 +71,26 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 0){
-        TFTopCell *topCell = (TFTopCell *)[tableView dequeueReusableCellWithIdentifier:@"TFTopCell" forIndexPath:indexPath];
-        topCell = [super decorateTopCell:topCell forIndex:indexPath.row];
-        // align visual state with model
-        NSNumber *size = [familySize objectForKey:topCell.label.text];
-        if([self model].familySize == [size integerValue]){
-            topCell.image.hidden = NO;
-            [self.table scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-        }
-        return topCell;
-    } else {
-        TFCell *cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
-        cell = [super decorateCell:cell forIndex:indexPath.row];
-        // align visual state with model
-        // align visual state with model
-        NSNumber *size = [familySize objectForKey:cell.label.text];
-        if([self model].familySize == [size integerValue]){
-            cell.image.hidden = NO;
-            [self.table scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-        }
-        return cell;
+    TFCell *cell;
+    if(indexPath.row == 0){ // top cell
+        cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFTopCell" forIndexPath:indexPath];
+    } else if(indexPath.row == (self.selections.count) - 1){ // bottom cell
+        cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFBottomCell" forIndexPath:indexPath];
+    } else { // body cell
+        cell = (TFCell *)[tableView dequeueReusableCellWithIdentifier:@"TFCell" forIndexPath:indexPath];
     }
-    return nil;
+    cell = [self decorateCell:cell forIndex:indexPath.row];
+    
+    // align visual state with model
+    NSNumber *size = [familySize objectForKey:cell.label.text];
+    if([self model].familySize == [size integerValue]){
+        cell.image.hidden = NO;
+        [self.table scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+    }
+    
+    return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -113,14 +110,6 @@
     
     // perform segue
     [self.parentViewController performSegueWithIdentifier:@"incomeViewController" sender:self];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        return 33.0;
-    } else {
-        return 39.0;
-    }
 }
 
 @end

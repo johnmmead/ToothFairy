@@ -11,7 +11,6 @@
 #import "TFBaseViewController.h"
 #import "TFAppDelegate.h"
 #import "TFCell.h"
-#import "TFTopCell.h"
 
 @interface TFBaseViewController ()
 @end
@@ -100,19 +99,6 @@ static SystemSoundID _dingSound;
     return cell;
 }
 
-// table view common stuff
-- (TFTopCell *)decorateTopCell:(TFTopCell *)cell forIndex:(int)index {
-    
-    // turn off the checkmark by default
-    cell.image.hidden = YES;
-    
-    cell.label.font = [UIFont fontWithName:@"HelveticaRoundedLTStd-Bd" size:21.0f];
-    cell.label.text = [self.selections objectAtIndex:index];
-    cell.label.textColor = [UIColor whiteColor];
-    
-    return cell;
-}
-
 - (UITableView *)configureTable:(UITableView *)table forController:(id)controller{
     table.delegate = controller;
     table.dataSource = controller;
@@ -122,6 +108,8 @@ static SystemSoundID _dingSound;
     table.bounces = NO;
     return table;
 }
+
+#pragma audio
 
 + (void)nukSound
 {

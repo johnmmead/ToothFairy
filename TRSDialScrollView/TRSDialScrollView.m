@@ -45,7 +45,9 @@
     // Don't let the container handle User Interaction
     [_dialView setUserInteractionEnabled:NO];
     
-    _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    CGRect rect = self.bounds;
+    rect.size.width = [[UIScreen mainScreen] bounds].size.width;
+    _scrollView = [[UIScrollView alloc] initWithFrame:rect];
     
     // Disable scroll bars
     [_scrollView setShowsHorizontalScrollIndicator:NO];

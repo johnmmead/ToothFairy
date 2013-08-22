@@ -44,6 +44,7 @@
 		88170D2017AC9C820059FE25 /* TRSDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88170D1E17AC9C820059FE25 /* TRSDialView.m */; };
 		88170D2317AC9DEF0059FE25 /* DialShading.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2117AC9DEF0059FE25 /* DialShading.png */; };
 		88170D2417AC9DEF0059FE25 /* DialBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 88170D2217AC9DEF0059FE25 /* DialBackground.png */; };
+		88569BA317C58BB8007E7143 /* TFBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88569BA217C58BB8007E7143 /* TFBottomCell.xib */; };
 		885B8AE617B00899009284D2 /* HelveticaRoundedLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */; };
 		885B8AE717B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */; };
 		885B8AE817B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */; };
@@ -95,8 +96,9 @@
 		885B8D3D17B80F9C009284D2 /* step7Of7.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D3B17B80F9B009284D2 /* step7Of7.png */; };
 		885B8D3E17B80F9C009284D2 /* step7Of7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B8D3C17B80F9C009284D2 /* step7Of7@2x.png */; };
 		885B8D4417B81259009284D2 /* TFIncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B8D4317B81258009284D2 /* TFIncomeViewController.m */; };
+		887FEDEF17C54E5F006F810D /* yourResults.png in Resources */ = {isa = PBXBuildFile; fileRef = 887FEDED17C54E5F006F810D /* yourResults.png */; };
+		887FEDF017C54E5F006F810D /* yourResults@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887FEDEE17C54E5F006F810D /* yourResults@2x.png */; };
 		888D959917C3ED990032E476 /* TFTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888D959817C3ED990032E476 /* TFTopCell.xib */; };
-		888D959C17C3EE8E0032E476 /* TFTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888D959B17C3EE8E0032E476 /* TFTopCell.m */; };
 		88B74D9817B816B60076414A /* buttonCalculateNow.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B74D9617B816B60076414A /* buttonCalculateNow.png */; };
 		88B74D9917B816B60076414A /* buttonCalculateNow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B74D9717B816B60076414A /* buttonCalculateNow@2x.png */; };
 		88B74D9C17B827830076414A /* TFAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B74D9B17B827820076414A /* TFAnimationViewController.m */; };
@@ -191,6 +193,7 @@
 		88170D1E17AC9C820059FE25 /* TRSDialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSDialView.m; sourceTree = "<group>"; };
 		88170D2117AC9DEF0059FE25 /* DialShading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DialShading.png; sourceTree = "<group>"; };
 		88170D2217AC9DEF0059FE25 /* DialBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DialBackground.png; sourceTree = "<group>"; };
+		88569BA217C58BB8007E7143 /* TFBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFBottomCell.xib; sourceTree = "<group>"; };
 		885B8AC317B00899009284D2 /* HelveticaRoundedLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-Black.otf"; sourceTree = "<group>"; };
 		885B8AC517B00899009284D2 /* HelveticaRoundedLTStd-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-Bd.otf"; sourceTree = "<group>"; };
 		885B8AC717B00899009284D2 /* HelveticaRoundedLTStd-BdO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaRoundedLTStd-BdO.otf"; sourceTree = "<group>"; };
@@ -250,9 +253,9 @@
 		885B8D3C17B80F9C009284D2 /* step7Of7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step7Of7@2x.png"; sourceTree = "<group>"; };
 		885B8D4217B81256009284D2 /* TFIncomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFIncomeViewController.h; path = ../TFIncomeViewController.h; sourceTree = "<group>"; };
 		885B8D4317B81258009284D2 /* TFIncomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFIncomeViewController.m; path = ../TFIncomeViewController.m; sourceTree = "<group>"; };
+		887FEDED17C54E5F006F810D /* yourResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yourResults.png; sourceTree = "<group>"; };
+		887FEDEE17C54E5F006F810D /* yourResults@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yourResults@2x.png"; sourceTree = "<group>"; };
 		888D959817C3ED990032E476 /* TFTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFTopCell.xib; sourceTree = "<group>"; };
-		888D959A17C3EE8E0032E476 /* TFTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTopCell.h; sourceTree = "<group>"; };
-		888D959B17C3EE8E0032E476 /* TFTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTopCell.m; sourceTree = "<group>"; };
 		88B74D9617B816B60076414A /* buttonCalculateNow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonCalculateNow.png; sourceTree = "<group>"; };
 		88B74D9717B816B60076414A /* buttonCalculateNow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonCalculateNow@2x.png"; sourceTree = "<group>"; };
 		88B74D9A17B827820076414A /* TFAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAnimationViewController.h; sourceTree = "<group>"; };
@@ -381,6 +384,8 @@
 		88170CEF17AB36020059FE25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				887FEDED17C54E5F006F810D /* yourResults.png */,
+				887FEDEE17C54E5F006F810D /* yourResults@2x.png */,
 				88B74DA317B858480076414A /* animationDisclaimer.png */,
 				88B74DA417B858480076414A /* animationDisclaimer@2x.png */,
 				88B74D9D17B853110076414A /* backgroundHeavens-568h@2x.png */,
@@ -481,9 +486,8 @@
 				885B8BAE17B46607009284D2 /* TFCell.h */,
 				885B8BAF17B46608009284D2 /* TFCell.m */,
 				885B8CCE17B56880009284D2 /* TFCell.xib */,
-				888D959A17C3EE8E0032E476 /* TFTopCell.h */,
-				888D959B17C3EE8E0032E476 /* TFTopCell.m */,
 				888D959817C3ED990032E476 /* TFTopCell.xib */,
+				88569BA217C58BB8007E7143 /* TFBottomCell.xib */,
 				88170CF317AB49690059FE25 /* TFBaseViewController.h */,
 				88170CF417AB49690059FE25 /* TFBaseViewController.m */,
 				88170CFC17AC1ED30059FE25 /* TFConstants.h */,
@@ -762,6 +766,9 @@
 				88EBE68817C2FC3400F9CA31 /* finalDisclaimer.png in Resources */,
 				88EBE68917C2FC3400F9CA31 /* finalDisclaimer@2x.png in Resources */,
 				888D959917C3ED990032E476 /* TFTopCell.xib in Resources */,
+				887FEDEF17C54E5F006F810D /* yourResults.png in Resources */,
+				887FEDF017C54E5F006F810D /* yourResults@2x.png in Resources */,
+				88569BA317C58BB8007E7143 /* TFBottomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,7 +800,6 @@
 				88B74D9C17B827830076414A /* TFAnimationViewController.m in Sources */,
 				88B74DA917B86F410076414A /* TFResultsViewController.m in Sources */,
 				88B74DB017B878720076414A /* TFFinalViewController.m in Sources */,
-				888D959C17C3EE8E0032E476 /* TFTopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,7 +837,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: John Mead";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Mead (N2A35EZYYB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Mead (N2A35EZYYB)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -847,7 +854,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = toothfairy;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CAFD287-4F76-4443-B42B-03C4EBCDCEFF";
+				PROVISIONING_PROFILE = "5D6FEE2A-57D9-405E-9F0E-1B4497610103";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -886,6 +893,7 @@
 		88170CDF17AB1A4D0059FE25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Mead (N2A35EZYYB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToothFairy/toothfairy-Prefix.pch";
 				INFOPLIST_FILE = "ToothFairy/toothfairy-Info.plist";

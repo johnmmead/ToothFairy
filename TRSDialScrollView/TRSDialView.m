@@ -51,11 +51,11 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
 
         _labelFont = [UIFont fontWithName:kTRSDialViewDefaultFont
                                      size:kTRSDialViewDefautLabelFontSize];
-        _minorTickColor = [UIColor yellowColor]; //[UIColor colorWithRed:0.788 green:0.898 blue:0.914 alpha:1.000];
+        _minorTickColor = [UIColor yellowColor];
         _minorTickLength = kTRSDialViewDefaultMinorTickLength;
         _minorTickWidth = KTRSDialViewDefaultMinorTickWidth;
 
-        _majorTickColor = [UIColor whiteColor];///[UIColor colorWithRed:0.482 green:0.008 blue:0.027 alpha:1.000];
+        _majorTickColor = [UIColor whiteColor];
         _majorTickLength = kTRSDialViewDefaultMajorTickLength;
         _majorTickWidth = kTRSDialViewDefaultMajorTickWidth;
 
@@ -77,11 +77,9 @@ const CGFloat kTRSDialViewDefaultMajorTickWidth       = 4.0f;
     
     // Resize the frame of the view
     CGRect frame = self.frame;
-    
-    frame.size.width = (_maximum - _minimum) * _minorTickDistance + self.superview.frame.size.width;
-    
-   // NSLog(@"frame = %@", NSStringFromCGRect(frame));
-    
+    //jmead frame.size.width = (_maximum - _minimum) * _minorTickDistance + self.superview.frame.size.width;
+    frame.size.width = (_maximum - _minimum) * _minorTickDistance + [[UIScreen mainScreen] bounds].size.width;
+        
     self.frame = frame;
 }
 
