@@ -168,8 +168,6 @@
 		88E9DF5E17C68AE200ECF9F1 /* cellDots~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0617C68AE200ECF9F1 /* cellDots~ipad.png */; };
 		88E9DF5F17C68AE200ECF9F1 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0717C68AE200ECF9F1 /* Default@2x~ipad.png */; };
 		88E9DF6017C68AE200ECF9F1 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0817C68AE200ECF9F1 /* Default~ipad.png */; };
-		88E9DF6117C68AE200ECF9F1 /* desktopIcon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0917C68AE200ECF9F1 /* desktopIcon@2x~ipad.png */; };
-		88E9DF6217C68AE200ECF9F1 /* desktopIcon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0A17C68AE200ECF9F1 /* desktopIcon~ipad.png */; };
 		88E9DF6317C68AE200ECF9F1 /* DialBackground@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0B17C68AE200ECF9F1 /* DialBackground@2x~ipad.png */; };
 		88E9DF6417C68AE200ECF9F1 /* DialBackground~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0C17C68AE200ECF9F1 /* DialBackground~ipad.png */; };
 		88E9DF6517C68AE200ECF9F1 /* disclaimer@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E9DF0D17C68AE200ECF9F1 /* disclaimer@2x~ipad.png */; };
@@ -1069,8 +1067,6 @@
 				88E9DF5E17C68AE200ECF9F1 /* cellDots~ipad.png in Resources */,
 				88E9DF5F17C68AE200ECF9F1 /* Default@2x~ipad.png in Resources */,
 				88E9DF6017C68AE200ECF9F1 /* Default~ipad.png in Resources */,
-				88E9DF6117C68AE200ECF9F1 /* desktopIcon@2x~ipad.png in Resources */,
-				88E9DF6217C68AE200ECF9F1 /* desktopIcon~ipad.png in Resources */,
 				88E9DF6317C68AE200ECF9F1 /* DialBackground@2x~ipad.png in Resources */,
 				88E9DF6417C68AE200ECF9F1 /* DialBackground~ipad.png in Resources */,
 				88E9DF6517C68AE200ECF9F1 /* disclaimer@2x~ipad.png in Resources */,
@@ -1235,7 +1231,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "";
 				PROVISIONING_PROFILE = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "00CF4D54-26BA-48C1-B4DD-007F26D1C9FD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1264,7 +1260,7 @@
 				GCC_PREFIX_HEADER = "ToothFairy/toothfairy-Prefix.pch";
 				INFOPLIST_FILE = "ToothFairy/toothfairy-Info.plist";
 				PRODUCT_NAME = toothfairy;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F42B18A3-73A9-40AA-AAB0-C6418761CBC4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
