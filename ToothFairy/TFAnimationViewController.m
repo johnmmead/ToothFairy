@@ -146,7 +146,7 @@
 }
 
 - (void)alphaCycleStrong:(UIView *)sender {
-    [sender setAlpha:0.45];
+    [sender setAlpha:0.65];
     [UIView animateWithDuration:2.5 delay:0 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat
                      animations:^{
                          [sender setAlpha:1.0];

@@ -1255,11 +1255,13 @@
 		88170CE017AB1A4D0059FE25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Seven Design Group Inc. (5945LE7VBT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Seven Design Group Inc. (5945LE7VBT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToothFairy/toothfairy-Prefix.pch";
 				INFOPLIST_FILE = "ToothFairy/toothfairy-Info.plist";
 				PRODUCT_NAME = toothfairy;
+				PROVISIONING_PROFILE = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CD392A8-9369-4A74-A8B7-C5B70F8A84B8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

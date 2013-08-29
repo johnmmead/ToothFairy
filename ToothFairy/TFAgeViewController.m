@@ -63,6 +63,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
      self.age.text = [NSString stringWithFormat:@"%i", _dialView.currentValue];
+    [self.model setAge:_dialView.currentValue];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView

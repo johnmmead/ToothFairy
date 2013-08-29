@@ -812,7 +812,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="starMedium.png" id="cHd-wa-L2s">
-                                <rect key="frame" x="81" y="257" width="24" height="24"/>
+                                <rect key="frame" x="81" y="251" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="phI-8f-HO9">
@@ -858,7 +858,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="yourResults.png" id="Y4s-G8-WCL">
-                                <rect key="frame" x="40" y="294" width="243" height="51"/>
+                                <rect key="frame" x="40" y="278" width="243" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="fairyNoSmile.png" id="YHI-DQ-FpF">
@@ -869,11 +869,19 @@
                                 <rect key="frame" x="-34" y="78" width="388" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Adjusting for inflation, $3 today was woth $1 in 1986." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GLd-Fv-oKU">
+                                <rect key="frame" x="20" y="324" width="280" height="59"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DLi-Rb-aAV"/>
                     <connections>
+                        <outlet property="adjusting" destination="GLd-Fv-oKU" id="r4s-Ln-ome"/>
                         <outlet property="bewm" destination="Mf7-aE-Qh7" id="tfy-lq-3KI"/>
                         <outlet property="disclaimer" destination="7LV-gc-Sdl" id="U5T-bm-cRN"/>
                         <outlet property="fairy" destination="YHI-DQ-FpF" id="GMu-Hn-OEl"/>
@@ -1046,6 +1054,7 @@
             <relationships>
                 <relationship kind="action" name="click:"/>
                 <relationship kind="action" name="shareClick:"/>
+                <relationship kind="outlet" name="adjusting" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="bewm" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="disclaimer" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="fairy" candidateClass="UIImageView"/>
